@@ -1,0 +1,779 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>LevelGenerator</name>
+    <events>
+        <event-group collapsed="1" description="" sid="85" title="Environment">
+            <sub-events>
+                <comment>Destroy unneeded stuff</comment>
+                <event-block sid="408">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="409" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="410" type="beer" />
+                        <action id="-9" name="Destroy" sid="411" type="blackkitten" />
+                        <action id="-9" name="Destroy" sid="412" type="burger" />
+                        <action id="-9" name="Destroy" sid="414" type="fastcar" />
+                        <action id="-9" name="Destroy" sid="415" type="girlFriend" />
+                        <action id="-9" name="Destroy" sid="416" type="gold" />
+                        <action id="-9" name="Destroy" sid="417" type="HAPPYfriend" />
+                        <action id="-9" name="Destroy" sid="418" type="hotChick" />
+                        <action id="-9" name="Destroy" sid="419" type="meat" />
+                        <action id="-9" name="Destroy" sid="420" type="money" />
+                        <action id="-9" name="Destroy" sid="421" type="oldlady" />
+                        <action id="-9" name="Destroy" sid="422" type="SADfriend" />
+                        <action id="-9" name="Destroy" sid="761" type="LikeUsFB" />
+                    </actions>
+                </event-block>
+                <comment>Text goes on callout box</comment>
+                <event-block sid="598">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="599" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="600" type="Text_CallOut">
+                            <param id="0" name="Object">CallOutBox</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <comment>Level 0 </comment>
+        <event-block sid="53">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="54" type="System">
+                    <param id="0" name="Variable">LevelNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="614" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="578" type="depthLEFT" />
+                <action id="-9" name="Destroy" sid="579" type="depthRIGHT" />
+                <action id="-9" name="Destroy" sid="580" type="clouds" />
+                <action id="-9" name="Destroy" sid="581" type="grassFAR" />
+                <action id="-9" name="Destroy" sid="582" type="grasspatches" />
+                <action id="-9" name="Destroy" sid="583" type="land" />
+                <action id="-9" name="Destroy" sid="584" type="grassNEAR" />
+                <action id="-3" name="Set position" sid="586" type="player">
+                    <param id="0" name="X">LayoutWidth/2</param>
+                    <param id="1" name="Y">player.Y</param>
+                </action>
+                <action id="-3" name="Set position" sid="594" type="CallOutBox">
+                    <param id="0" name="X">player.X</param>
+                    <param id="1" name="Y">player.Y-400</param>
+                </action>
+                <action id="0" name="Set text" sid="641" type="InfoBox">
+                    <param id="0" name="Text">&quot;HOW TO PLAY&quot; &amp; newline &amp; newline &amp; &quot;- W,S,A,D or Arrow Keys to Move .&quot; &amp; newline &amp; newline &amp; &quot;WHAT TO DO&quot; &amp; newline &amp; &quot;- Figure Out ;)&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="591" type="Text_CallOut">
+                    <param id="0" name="Text">&quot;This is You, A Shadow.&quot;</param>
+                </action>
+                <action id="-24" name="Move to top" sid="593" type="Text_CallOut" />
+                <action id="1" name="Append text" sid="605" type="Text_CallOut">
+                    <param id="0" name="Text">newline &amp; newline &amp; &quot;Everyone, has a Choice;&quot;</param>
+                </action>
+                <action id="1" name="Append text" sid="606" type="Text_CallOut">
+                    <param id="0" name="Text">newline &amp; &quot;So do you.&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="611" type="System">
+                    <param id="0" name="Seconds">7</param>
+                </action>
+                <action id="0" name="Set text" sid="615" type="Text_CallOut">
+                    <param id="0" name="Text">newline &amp;  &quot;And you&apos;re about to make some tough ones now.&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="616" type="System">
+                    <param id="0" name="Seconds">7</param>
+                </action>
+                <action id="0" name="Set text" sid="617" type="Text_CallOut">
+                    <param id="0" name="Text">newline &amp;  &quot;Choose Wisely.&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="618" type="System">
+                    <param id="0" name="Seconds">3</param>
+                </action>
+                <action id="0" name="Set text" sid="619" type="Text_CallOut">
+                    <param id="0" name="Text">newline &amp;  &quot;And Be Honest!&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="642" type="System">
+                    <param id="0" name="Seconds">3</param>
+                </action>
+                <action id="-9" name="Set value" sid="638" type="System">
+                    <param id="0" name="Variable">ScreenChange</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="637" type="System">
+                    <param id="0" name="Variable">LevelNumber</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="640" type="System">
+                    <param id="0" name="Layout">Level</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Level 1</comment>
+        <event-block sid="55">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="56" type="System">
+                    <param id="0" name="Variable">LevelNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="426" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="645" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-3" name="Create object" sid="424" type="System">
+                    <param id="0" name="Object to create">blackkitten</param>
+                    <param id="1" name="Layer">&quot;objects&quot;</param>
+                    <param id="2" name="X">land.ImagePointX(1)</param>
+                    <param id="3" name="Y">land.ImagePointY(1)</param>
+                </action>
+                <action id="-3" name="Create object" sid="425" type="System">
+                    <param id="0" name="Object to create">gold</param>
+                    <param id="1" name="Layer">&quot;objects&quot;</param>
+                    <param id="2" name="X">land.ImagePointX(2)</param>
+                    <param id="3" name="Y">land.ImagePointY(2)</param>
+                </action>
+                <action id="-3" name="Set position" sid="648" type="InfoBox">
+                    <param id="0" name="X">InfoBox.X</param>
+                    <param id="1" name="Y">250</param>
+                </action>
+                <action id="0" name="Set text" sid="646" type="InfoBox">
+                    <param id="0" name="Text">&quot;Level 1&quot; &amp; newline &amp; &quot;My Precious!&quot;</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="647" type="InfoBox">
+                    <param id="0" name="Opacity">30</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Level 2</comment>
+        <event-block sid="431">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="432" type="System">
+                    <param id="0" name="Variable">LevelNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="433" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="652" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-3" name="Create object" sid="434" type="System">
+                    <param id="0" name="Object to create">money</param>
+                    <param id="1" name="Layer">&quot;objects&quot;</param>
+                    <param id="2" name="X">land.ImagePointX(1)</param>
+                    <param id="3" name="Y">land.ImagePointY(1)</param>
+                </action>
+                <action id="-3" name="Create object" sid="435" type="System">
+                    <param id="0" name="Object to create">SADfriend</param>
+                    <param id="1" name="Layer">&quot;objects&quot;</param>
+                    <param id="2" name="X">land.ImagePointX(2)</param>
+                    <param id="3" name="Y">land.ImagePointY(2)</param>
+                </action>
+                <action id="-3" name="Set position" sid="649" type="InfoBox">
+                    <param id="0" name="X">InfoBox.X</param>
+                    <param id="1" name="Y">250</param>
+                </action>
+                <action id="0" name="Set text" sid="650" type="InfoBox">
+                    <param id="0" name="Text">&quot;Level 2&quot; &amp; newline &amp; &quot;The Green Friend&quot;</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="651" type="InfoBox">
+                    <param id="0" name="Opacity">30</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Level 3</comment>
+        <event-block sid="436">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="437" type="System">
+                    <param id="0" name="Variable">LevelNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="438" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="653" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-3" name="Create object" sid="439" type="System">
+                    <param id="0" name="Object to create">fastcar</param>
+                    <param id="1" name="Layer">&quot;objects&quot;</param>
+                    <param id="2" name="X">land.ImagePointX(4)</param>
+                    <param id="3" name="Y">land.ImagePointY(4)</param>
+                </action>
+                <action id="-3" name="Create object" sid="440" type="System">
+                    <param id="0" name="Object to create">girlFriend</param>
+                    <param id="1" name="Layer">&quot;objects&quot;</param>
+                    <param id="2" name="X">land.ImagePointX(2)</param>
+                    <param id="3" name="Y">land.ImagePointY(2)</param>
+                </action>
+                <action id="-3" name="Set position" sid="654" type="InfoBox">
+                    <param id="0" name="X">InfoBox.X</param>
+                    <param id="1" name="Y">250</param>
+                </action>
+                <action id="0" name="Set text" sid="655" type="InfoBox">
+                    <param id="0" name="Text">&quot;Level 3&quot; &amp; newline &amp; &quot;Heart goes Faster&quot;</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="656" type="InfoBox">
+                    <param id="0" name="Opacity">30</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Level 4</comment>
+        <event-block sid="491">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="492" type="System">
+                    <param id="0" name="Variable">LevelNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="493" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="657" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-3" name="Create object" sid="494" type="System">
+                    <param id="0" name="Object to create">oldlady</param>
+                    <param id="1" name="Layer">&quot;objects&quot;</param>
+                    <param id="2" name="X">land.ImagePointX(1)</param>
+                    <param id="3" name="Y">land.ImagePointY(1)</param>
+                </action>
+                <action id="-3" name="Create object" sid="495" type="System">
+                    <param id="0" name="Object to create">SADfriend</param>
+                    <param id="1" name="Layer">&quot;objects&quot;</param>
+                    <param id="2" name="X">land.ImagePointX(2)</param>
+                    <param id="3" name="Y">land.ImagePointY(2)</param>
+                </action>
+                <action id="-3" name="Set position" sid="658" type="InfoBox">
+                    <param id="0" name="X">InfoBox.X</param>
+                    <param id="1" name="Y">250</param>
+                </action>
+                <action id="0" name="Set text" sid="659" type="InfoBox">
+                    <param id="0" name="Text">&quot;Level 4&quot; &amp; newline &amp; &quot;The Karma wise&quot;</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="660" type="InfoBox">
+                    <param id="0" name="Opacity">30</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Level 5</comment>
+        <event-block sid="496">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="497" type="System">
+                    <param id="0" name="Variable">LevelNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="498" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="661" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-3" name="Create object" sid="499" type="System">
+                    <param id="0" name="Object to create">blackkitten</param>
+                    <param id="1" name="Layer">&quot;objects&quot;</param>
+                    <param id="2" name="X">land.ImagePointX(1)</param>
+                    <param id="3" name="Y">land.ImagePointY(1)</param>
+                </action>
+                <action id="-3" name="Create object" sid="500" type="System">
+                    <param id="0" name="Object to create">hotChick</param>
+                    <param id="1" name="Layer">&quot;objects&quot;</param>
+                    <param id="2" name="X">land.ImagePointX(4)</param>
+                    <param id="3" name="Y">land.ImagePointY(4)</param>
+                </action>
+                <action id="-3" name="Set position" sid="662" type="InfoBox">
+                    <param id="0" name="X">InfoBox.X</param>
+                    <param id="1" name="Y">250</param>
+                </action>
+                <action id="0" name="Set text" sid="663" type="InfoBox">
+                    <param id="0" name="Text">&quot;Level 5&quot; &amp; newline &amp; &quot;A chance of Life, Time.&quot;</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="664" type="InfoBox">
+                    <param id="0" name="Opacity">30</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Level 6</comment>
+        <event-block sid="501">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="502" type="System">
+                    <param id="0" name="Variable">LevelNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">6</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="503" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="665" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-3" name="Create object" sid="504" type="System">
+                    <param id="0" name="Object to create">girlFriend</param>
+                    <param id="1" name="Layer">&quot;objects&quot;</param>
+                    <param id="2" name="X">land.ImagePointX(4)</param>
+                    <param id="3" name="Y">land.ImagePointY(4)</param>
+                </action>
+                <action id="-3" name="Create object" sid="505" type="System">
+                    <param id="0" name="Object to create">SADfriend</param>
+                    <param id="1" name="Layer">&quot;objects&quot;</param>
+                    <param id="2" name="X">land.ImagePointX(2)</param>
+                    <param id="3" name="Y">land.ImagePointY(2)</param>
+                </action>
+                <action id="-3" name="Set position" sid="666" type="InfoBox">
+                    <param id="0" name="X">InfoBox.X</param>
+                    <param id="1" name="Y">250</param>
+                </action>
+                <action id="0" name="Set text" sid="667" type="InfoBox">
+                    <param id="0" name="Text">&quot;Level 6&quot; &amp; newline &amp; &quot;Mate&quot;</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="668" type="InfoBox">
+                    <param id="0" name="Opacity">30</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Level 7</comment>
+        <event-block sid="506">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="507" type="System">
+                    <param id="0" name="Variable">LevelNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">7</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="508" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="669" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-3" name="Create object" sid="509" type="System">
+                    <param id="0" name="Object to create">oldlady</param>
+                    <param id="1" name="Layer">&quot;objects&quot;</param>
+                    <param id="2" name="X">land.ImagePointX(1)</param>
+                    <param id="3" name="Y">land.ImagePointY(1)</param>
+                </action>
+                <action id="-3" name="Create object" sid="510" type="System">
+                    <param id="0" name="Object to create">blackkitten</param>
+                    <param id="1" name="Layer">&quot;objects&quot;</param>
+                    <param id="2" name="X">land.ImagePointX(2)</param>
+                    <param id="3" name="Y">land.ImagePointY(2)</param>
+                </action>
+                <action id="-3" name="Set position" sid="670" type="InfoBox">
+                    <param id="0" name="X">InfoBox.X</param>
+                    <param id="1" name="Y">250</param>
+                </action>
+                <action id="0" name="Set text" sid="671" type="InfoBox">
+                    <param id="0" name="Text">&quot;Level 7&quot; &amp; newline &amp; &quot;The Tough Call&quot;</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="672" type="InfoBox">
+                    <param id="0" name="Opacity">30</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Level 8</comment>
+        <event-block sid="511">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="512" type="System">
+                    <param id="0" name="Variable">LevelNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">8</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="513" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="673" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-3" name="Create object" sid="514" type="System">
+                    <param id="0" name="Object to create">blackkitten</param>
+                    <param id="1" name="Layer">&quot;objects&quot;</param>
+                    <param id="2" name="X">land.ImagePointX(1)</param>
+                    <param id="3" name="Y">land.ImagePointY(1)</param>
+                </action>
+                <action id="-3" name="Create object" sid="515" type="System">
+                    <param id="0" name="Object to create">beer</param>
+                    <param id="1" name="Layer">&quot;objects&quot;</param>
+                    <param id="2" name="X">land.ImagePointX(4)</param>
+                    <param id="3" name="Y">land.ImagePointY(4)</param>
+                </action>
+                <action id="-3" name="Set position" sid="674" type="InfoBox">
+                    <param id="0" name="X">InfoBox.X</param>
+                    <param id="1" name="Y">250</param>
+                </action>
+                <action id="0" name="Set text" sid="675" type="InfoBox">
+                    <param id="0" name="Text">&quot;Level 8&quot; &amp; newline &amp; &quot;Thirst&quot;</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="676" type="InfoBox">
+                    <param id="0" name="Opacity">30</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Level 9</comment>
+        <event-block sid="516">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="517" type="System">
+                    <param id="0" name="Variable">LevelNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">9</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="518" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="677" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-3" name="Create object" sid="519" type="System">
+                    <param id="0" name="Object to create">girlFriend</param>
+                    <param id="1" name="Layer">&quot;objects&quot;</param>
+                    <param id="2" name="X">land.ImagePointX(4)</param>
+                    <param id="3" name="Y">land.ImagePointY(4)</param>
+                </action>
+                <action id="-3" name="Create object" sid="520" type="System">
+                    <param id="0" name="Object to create">hotChick</param>
+                    <param id="1" name="Layer">&quot;objects&quot;</param>
+                    <param id="2" name="X">land.ImagePointX(2)</param>
+                    <param id="3" name="Y">land.ImagePointY(2)</param>
+                </action>
+                <action id="-3" name="Set position" sid="678" type="InfoBox">
+                    <param id="0" name="X">InfoBox.X</param>
+                    <param id="1" name="Y">250</param>
+                </action>
+                <action id="0" name="Set text" sid="679" type="InfoBox">
+                    <param id="0" name="Text">&quot;Level 9&quot; &amp; newline &amp; &quot;Desires&quot;</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="680" type="InfoBox">
+                    <param id="0" name="Opacity">30</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Level 10</comment>
+        <event-block sid="521">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="522" type="System">
+                    <param id="0" name="Variable">LevelNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">10</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="523" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="681" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-3" name="Create object" sid="524" type="System">
+                    <param id="0" name="Object to create">burger</param>
+                    <param id="1" name="Layer">&quot;objects&quot;</param>
+                    <param id="2" name="X">land.ImagePointX(1)</param>
+                    <param id="3" name="Y">land.ImagePointY(1)</param>
+                </action>
+                <action id="-3" name="Create object" sid="525" type="System">
+                    <param id="0" name="Object to create">gold</param>
+                    <param id="1" name="Layer">&quot;objects&quot;</param>
+                    <param id="2" name="X">land.ImagePointX(2)</param>
+                    <param id="3" name="Y">land.ImagePointY(2)</param>
+                </action>
+                <action id="-3" name="Set position" sid="682" type="InfoBox">
+                    <param id="0" name="X">InfoBox.X</param>
+                    <param id="1" name="Y">250</param>
+                </action>
+                <action id="0" name="Set text" sid="683" type="InfoBox">
+                    <param id="0" name="Text">&quot;Level 10&quot; &amp; newline &amp; &quot;Needs&quot;</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="684" type="InfoBox">
+                    <param id="0" name="Opacity">30</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Level 11</comment>
+        <event-block sid="526">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="527" type="System">
+                    <param id="0" name="Variable">LevelNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">11</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="528" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="685" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-3" name="Create object" sid="529" type="System">
+                    <param id="0" name="Object to create">HAPPYfriend</param>
+                    <param id="1" name="Layer">&quot;objects&quot;</param>
+                    <param id="2" name="X">land.ImagePointX(1)</param>
+                    <param id="3" name="Y">land.ImagePointY(1)</param>
+                </action>
+                <action id="-3" name="Create object" sid="530" type="System">
+                    <param id="0" name="Object to create">SADfriend</param>
+                    <param id="1" name="Layer">&quot;objects&quot;</param>
+                    <param id="2" name="X">land.ImagePointX(2)</param>
+                    <param id="3" name="Y">land.ImagePointY(2)</param>
+                </action>
+                <action id="-3" name="Set position" sid="686" type="InfoBox">
+                    <param id="0" name="X">InfoBox.X</param>
+                    <param id="1" name="Y">250</param>
+                </action>
+                <action id="0" name="Set text" sid="687" type="InfoBox">
+                    <param id="0" name="Text">&quot;Level 11&quot; &amp; newline &amp; &quot;Desert&quot;</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="688" type="InfoBox">
+                    <param id="0" name="Opacity">30</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Level 12</comment>
+        <event-block sid="531">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="532" type="System">
+                    <param id="0" name="Variable">LevelNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">12</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="533" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="689" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-3" name="Create object" sid="534" type="System">
+                    <param id="0" name="Object to create">meat</param>
+                    <param id="1" name="Layer">&quot;objects&quot;</param>
+                    <param id="2" name="X">land.ImagePointX(1)</param>
+                    <param id="3" name="Y">land.ImagePointY(1)</param>
+                </action>
+                <action id="-3" name="Create object" sid="535" type="System">
+                    <param id="0" name="Object to create">blackkitten</param>
+                    <param id="1" name="Layer">&quot;objects&quot;</param>
+                    <param id="2" name="X">land.ImagePointX(2)</param>
+                    <param id="3" name="Y">land.ImagePointY(2)</param>
+                </action>
+                <action id="-3" name="Set position" sid="690" type="InfoBox">
+                    <param id="0" name="X">InfoBox.X</param>
+                    <param id="1" name="Y">250</param>
+                </action>
+                <action id="0" name="Set text" sid="691" type="InfoBox">
+                    <param id="0" name="Text">&quot;Level 12&quot; &amp; newline &amp; &quot;Starve&quot;</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="692" type="InfoBox">
+                    <param id="0" name="Opacity">30</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Level 13</comment>
+        <event-block sid="536">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="537" type="System">
+                    <param id="0" name="Variable">LevelNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">13</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="538" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="693" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-3" name="Create object" sid="539" type="System">
+                    <param id="0" name="Object to create">girlFriend</param>
+                    <param id="1" name="Layer">&quot;objects&quot;</param>
+                    <param id="2" name="X">land.ImagePointX(4)</param>
+                    <param id="3" name="Y">land.ImagePointY(4)</param>
+                </action>
+                <action id="-3" name="Create object" sid="540" type="System">
+                    <param id="0" name="Object to create">blackkitten</param>
+                    <param id="1" name="Layer">&quot;objects&quot;</param>
+                    <param id="2" name="X">land.ImagePointX(2)</param>
+                    <param id="3" name="Y">land.ImagePointY(2)</param>
+                </action>
+                <action id="-3" name="Set position" sid="694" type="InfoBox">
+                    <param id="0" name="X">InfoBox.X</param>
+                    <param id="1" name="Y">250</param>
+                </action>
+                <action id="0" name="Set text" sid="695" type="InfoBox">
+                    <param id="0" name="Text">&quot;Level 13&quot; &amp; newline &amp; &quot;Logical&quot;</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="696" type="InfoBox">
+                    <param id="0" name="Opacity">30</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Scores</comment>
+        <event-block sid="697">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="698" type="System">
+                    <param id="0" name="Variable">LevelNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">14</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="699" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="700" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="705" type="InfoBox">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-3" name="Set position" sid="703" type="InfoBox">
+                    <param id="0" name="X">InfoBox.X</param>
+                    <param id="1" name="Y">550</param>
+                </action>
+                <action id="0" name="Set text" sid="704" type="InfoBox">
+                    <param id="0" name="Text">&quot;####.....####&quot; &amp; newline &amp; &quot;......#######&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="707" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="1" name="Append text" sid="708" type="InfoBox">
+                    <param id="0" name="Text">&quot;.....@%@#%#$^#$#.&quot; &amp; newline &amp; &quot;..............^*%...........@%@.........&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="709" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="1" name="Append text" sid="715" type="InfoBox">
+                    <param id="0" name="Text">&quot;.....$$$$$$$$...^^..&amp;#@...........&quot; &amp; newline &amp; &quot;........^*#...&amp;%#........&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="711" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="1" name="Append text" sid="716" type="InfoBox">
+                    <param id="0" name="Text">&quot;.....!@!$$#%$#^.....%^%..........&quot; &amp; newline &amp; &quot;.............@#$#@.//....&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="724" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="1" name="Append text" sid="725" type="InfoBox">
+                    <param id="0" name="Text">&quot;.....@%@#%#$^#$#.&quot; &amp; newline &amp; &quot;..............^*%...........@%@.........&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="726" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="1" name="Append text" sid="727" type="InfoBox">
+                    <param id="0" name="Text">&quot;.....$$$$$$$$...^^..&amp;#@...........&quot; &amp; newline &amp; &quot;........^*#...&amp;%#........&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="728" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="1" name="Append text" sid="729" type="InfoBox">
+                    <param id="0" name="Text">&quot;.....!@!$$#%$#^.....%^%..........&quot; &amp; newline &amp; &quot;.............@#$#@.//....&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="730" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="1" name="Append text" sid="731" type="InfoBox">
+                    <param id="0" name="Text">&quot;.....@%@#%#$^#$#.&quot; &amp; newline &amp; &quot;..............^*%...........@%@.........&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="732" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="1" name="Append text" sid="735" type="InfoBox">
+                    <param id="0" name="Text">&quot;.....!@!$$#%$#^........&quot; &amp; newline &amp; &quot;....@#$#@./....&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="853" type="InfoBox">
+                    <param id="0" name="Text">&quot;DID YOU KNOW?&quot; &amp; newline &amp; newline &amp; &quot;You just played a Psychology Game ....&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="736" type="System">
+                    <param id="0" name="Seconds">7</param>
+                </action>
+                <action id="0" name="Set text" sid="737" type="InfoBox">
+                    <param id="0" name="Text">&quot;YOU ARE&quot; &amp; newline &amp; newline &amp; floor((max(Kindness,0)/6)*100) &amp; &quot;%  KIND,&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="738" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="1" name="Append text" sid="739" type="InfoBox">
+                    <param id="0" name="Text">newline &amp; floor((max(Greed,0)/4)*100) &amp; &quot;%  GREEDY,&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="740" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="1" name="Append text" sid="741" type="InfoBox">
+                    <param id="0" name="Text">newline &amp; floor((max(Perversion,0)/4)*100) &amp; &quot;%  PERVERT,&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="742" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="1" name="Append text" sid="743" type="InfoBox">
+                    <param id="0" name="Text">newline &amp; floor((max(Friendship,0)/6)*100) &amp; &quot;%  FRIENDLY,&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="744" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="1" name="Append text" sid="745" type="InfoBox">
+                    <param id="0" name="Text">newline &amp; floor((max(Goofy,0)/1)*100) &amp; &quot;%  GOOFY!&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="746" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action id="1" name="Append text" sid="747" type="InfoBox">
+                    <param id="0" name="Text"> newline &amp; newline &amp; &quot;HAVE A NICE DAY! :)&quot;</param>
+                </action>
+                <action id="-3" name="Create object" sid="762" type="System">
+                    <param id="0" name="Object to create">LikeUsFB</param>
+                    <param id="1" name="Layer">&quot;depth&quot;</param>
+                    <param id="2" name="X">land.X</param>
+                    <param id="3" name="Y">land.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Credits</comment>
+        <event-block sid="854">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="855" type="System">
+                    <param id="0" name="Variable">LevelNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">15</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="856" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="857" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="865" type="depthLEFT" />
+                <action id="-9" name="Destroy" sid="866" type="depthRIGHT" />
+                <action id="-9" name="Destroy" sid="867" type="clouds" />
+                <action id="-9" name="Destroy" sid="868" type="grassFAR" />
+                <action id="-9" name="Destroy" sid="869" type="grasspatches" />
+                <action id="-9" name="Destroy" sid="870" type="land" />
+                <action id="-9" name="Destroy" sid="871" type="grassNEAR" />
+                <action id="-9" name="Destroy" sid="872" type="player" />
+                <action id="-7" name="Set size" sid="874" type="InfoBox">
+                    <param id="0" name="Width">1536</param>
+                    <param id="1" name="Height">2048</param>
+                </action>
+                <action id="-3" name="Set position" sid="860" type="InfoBox">
+                    <param id="0" name="X">LayoutWidth/2</param>
+                    <param id="1" name="Y">LayoutHeight/2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="862" type="InfoBox">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="0" name="Set text" sid="873" type="InfoBox">
+                    <param id="0" name="Text">&quot;CREDITS&quot; &amp; newline &amp; newline &amp; newline </param>
+                </action>
+                <action id="1" name="Append text" sid="875" type="InfoBox">
+                    <param id="0" name="Text"> &quot;Game Design,&quot; &amp;  newline &amp; &quot;Coding, Art&quot; &amp; newline &amp; &quot;by&quot; &amp; newline &amp; &quot;Krish &lt;Srikrishna Das&gt;&quot;</param>
+                </action>
+                <action id="1" name="Append text" sid="876" type="InfoBox">
+                    <param id="0" name="Text"> newline &amp; newline &amp; &quot;@toonheart&quot; &amp; newline &amp; &quot;@srikrishnadas&quot; &amp; newline &amp; &quot;&lt;krish@toonheart.com&gt;&quot;</param>
+                </action>
+                <action id="1" name="Append text" sid="877" type="InfoBox">
+                    <param id="0" name="Text">  newline &amp; newline  &amp; &quot;Sounds:&quot; &amp; newline &amp; &quot;freesound.org, flashkit.com, Bfxr, Krish&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

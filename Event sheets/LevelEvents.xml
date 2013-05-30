@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>LevelEvents</name>
+    <events>
+        <include>LevelGenerator</include>
+        <include>Collisions</include>
+        <include>Fades</include>
+        <include>UserInputs</include>
+        <variable comment="LevelNumbers" constant="0" name="LevelNumber" sid="52" static="0" type="number">0</variable>
+        <variable comment="Level of Kindness" constant="0" name="Kindness" sid="133" static="0" type="number">0</variable>
+        <variable comment="Level of Greed" constant="0" name="Greed" sid="134" static="0" type="number">0</variable>
+        <variable comment="Level of Pervertness" constant="0" name="Perversion" sid="135" static="0" type="number">0</variable>
+        <variable comment="Level of True Friend" constant="0" name="Friendship" sid="136" static="0" type="number">0</variable>
+        <variable comment="Level of Goofiness" constant="0" name="Goofy" sid="137" static="0" type="number">0</variable>
+        <event-block sid="602">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="603" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set web font" sid="604" type="Text_CallOut">
+                    <param id="0" name="Family name">&quot;PhatoneRegular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;phatonestylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="622" type="InfoBox">
+                    <param id="0" name="Family name">&quot;PhatoneRegular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;phatonestylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="634" type="pressSTART">
+                    <param id="0" name="Family name">&quot;PhatoneRegular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;phatonestylesheet.css&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="884">
+            <conditions>
+                <condition id="0" name="On ended" sid="885" type="Audio">
+                    <param id="0" name="Tag">&quot;logomusic&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="886" type="Audio">
+                    <param id="0" name="Audio file">GameLogomusic</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;logomusic&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

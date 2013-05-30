@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>UserInputs</name>
+    <events>
+        <event-group description="" sid="80" title="Movement Controls" />
+        <event-block any="1" sid="64">
+            <conditions>
+                <condition id="2" name="Key is down" sid="65" type="Keyboard">
+                    <param id="0" name="Key">87 (W)</param>
+                </condition>
+                <condition id="2" name="Key is down" sid="76" type="Keyboard">
+                    <param id="0" name="Key">38 (Up arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="66" type="player">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="67">
+            <conditions>
+                <condition id="2" name="Key is down" sid="68" type="Keyboard">
+                    <param id="0" name="Key">83 (S)</param>
+                </condition>
+                <condition id="2" name="Key is down" sid="77" type="Keyboard">
+                    <param id="0" name="Key">40 (Down arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="69" type="player">
+                    <param id="0" name="Control">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="70">
+            <conditions>
+                <condition id="2" name="Key is down" sid="71" type="Keyboard">
+                    <param id="0" name="Key">65 (A)</param>
+                </condition>
+                <condition id="2" name="Key is down" sid="78" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="72" type="player">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="73">
+            <conditions>
+                <condition id="2" name="Key is down" sid="74" type="Keyboard">
+                    <param id="0" name="Key">68 (D)</param>
+                </condition>
+                <condition id="2" name="Key is down" sid="79" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="75" type="player">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="758">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="759" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">LikeUsFB</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="887" type="System">
+                    <param id="0" name="Variable">LevelNumber</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="888" type="System">
+                    <param id="0" name="Variable">ScreenChange</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="889" type="System">
+                    <param id="0" name="Layout">Level</param>
+                </action>
+                <action id="8" name="Open URL in new window" sid="760" type="Browser">
+                    <param id="0" name="URL">&quot;https://www.facebook.com/YouAreAShadow&quot;</param>
+                    <param id="1" name="Tag">&quot;FBpage&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
