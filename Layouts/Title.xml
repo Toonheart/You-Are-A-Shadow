@@ -30,6 +30,7 @@
                 <instance type="Logo" uid="30">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -51,6 +52,7 @@
                 <instance type="titleLogo" uid="33">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -71,7 +73,7 @@
                 </instance>
                 <instance type="pressSTART" uid="34">
                     <properties>
-                        <text>Press ENTER to START</text>
+                        <text>Press ENTER or TOUCH ANYWHERE to START</text>
                         <initial-visibility>Invisible</initial-visibility>
                         <font>Arial,-48,400,0</font>
                         <color>0,0,0</color>

@@ -4,17 +4,21 @@
     <description>A game based on Minimalism theme for Ludum Dare #26 competition</description>
     <version>1.0</version>
     <author>Srikrishna Das &lt;krish@toonheart.com&gt;</author>
+    <author-email></author-email>
+    <author-website></author-website>
+    <app-id></app-id>
     <unique-id>1ahnhyia3yiq5</unique-id>
-    <saved-with-version>12600</saved-with-version>
-    <next-sid>890</next-sid>
+    <saved-with-version>13200</saved-with-version>
     <used-plugins>
-        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
-        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Facebook" version="1">Facebook</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
@@ -542,6 +546,12 @@
         <object-type name="Audio" sid="791">
             <plugin id="Audio" />
         </object-type>
+        <object-type name="Facebook" sid="4870790370847442">
+            <plugin id="Facebook" />
+        </object-type>
+        <object-type name="Touch" sid="1884830869234146">
+            <plugin id="Touch" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
@@ -572,6 +582,17 @@
                 <roll-off-factor>1</roll-off-factor>
                 <speed-of-sound>5000</speed-of-sound>
                 <doppler-factor>1</doppler-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="Facebook" uid="40">
+            <properties>
+                <app-id>377344789037084</app-id>
+                <app-secret></app-secret>
+            </properties>
+        </global-instance>
+        <global-instance type="Touch" uid="41">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
     </global-instances>

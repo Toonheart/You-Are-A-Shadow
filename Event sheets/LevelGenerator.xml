@@ -69,7 +69,7 @@
                     <param id="1" name="Y">player.Y-400</param>
                 </action>
                 <action id="0" name="Set text" sid="641" type="InfoBox">
-                    <param id="0" name="Text">&quot;HOW TO PLAY&quot; &amp; newline &amp; newline &amp; &quot;- W,S,A,D or Arrow Keys to Move .&quot; &amp; newline &amp; newline &amp; &quot;WHAT TO DO&quot; &amp; newline &amp; &quot;- Figure Out ;)&quot;</param>
+                    <param id="0" name="Text">&quot;HOW TO PLAY&quot; &amp; newline &amp; newline &amp; &quot;- W,S,A,D or Arrow Keys to Move .&quot; &amp; newline &amp; &quot;or TOUCH to choose&quot; &amp; newline &amp; newline &amp; &quot;WHAT TO DO&quot; &amp; newline &amp; &quot;- Figure Out ;)&quot;</param>
                 </action>
                 <action id="0" name="Set text" sid="591" type="Text_CallOut">
                     <param id="0" name="Text">&quot;This is You, A Shadow.&quot;</param>
@@ -685,7 +685,7 @@
                     <param id="0" name="Text">&quot;DID YOU KNOW?&quot; &amp; newline &amp; newline &amp; &quot;You just played a Psychology Game ....&quot;</param>
                 </action>
                 <action id="-16" name="Wait" sid="736" type="System">
-                    <param id="0" name="Seconds">7</param>
+                    <param id="0" name="Seconds">4</param>
                 </action>
                 <action id="0" name="Set text" sid="737" type="InfoBox">
                     <param id="0" name="Text">&quot;YOU ARE&quot; &amp; newline &amp; newline &amp; floor((max(Kindness,0)/6)*100) &amp; &quot;%  KIND,&quot;</param>
@@ -726,6 +726,17 @@
                     <param id="2" name="X">land.X</param>
                     <param id="3" name="Y">land.Y</param>
                 </action>
+                <action id="7" name="Publish wall post" sid="2560714826614559" type="Facebook">
+                    <param id="0" name="Message">facebook.FirstName &amp; &quot;is&quot; &amp; floor((max(Perversion,0)/4)*100) &amp; &quot;% PERVERT today.&quot; &amp; newline &amp; &quot;Find out your&apos;s&quot;</param>
+                </action>
+                <action id="8" name="Publish link" sid="9368761990475837" type="Facebook">
+                    <param id="0" name="Message">&quot;This game is Awesome!&quot;</param>
+                    <param id="1" name="URL">&quot;https://apps.facebook.com/377344789037084/&quot;</param>
+                    <param id="2" name="Name">&quot;You are, A Shadow&quot;</param>
+                    <param id="3" name="Caption">facebook.FirstName &amp; &quot;is&quot; &amp; floor((max(Perversion,0)/4)*100) &amp; &quot;% PERVERT today.&quot; &amp; newline &amp; &quot;Find out your&apos;s&quot;</param>
+                    <param id="4" name="Description">&quot;&quot;</param>
+                    <param id="5" name="Picture URL (optional)">&quot;http://www.ludumdare.com/compo/wp-content/compo2/233892/21211-shot0.png&quot;</param>
+                </action>
             </actions>
         </event-block>
         <comment>Credits</comment>
@@ -761,17 +772,20 @@
                 <action id="-16" name="Set opacity" sid="862" type="InfoBox">
                     <param id="0" name="Opacity">100</param>
                 </action>
-                <action id="0" name="Set text" sid="873" type="InfoBox">
+                <action disabled="1" id="0" name="Set text" sid="873" type="InfoBox">
                     <param id="0" name="Text">&quot;CREDITS&quot; &amp; newline &amp; newline &amp; newline </param>
                 </action>
-                <action id="1" name="Append text" sid="875" type="InfoBox">
+                <action disabled="1" id="1" name="Append text" sid="875" type="InfoBox">
                     <param id="0" name="Text"> &quot;Game Design,&quot; &amp;  newline &amp; &quot;Coding, Art&quot; &amp; newline &amp; &quot;by&quot; &amp; newline &amp; &quot;Krish &lt;Srikrishna Das&gt;&quot;</param>
                 </action>
-                <action id="1" name="Append text" sid="876" type="InfoBox">
+                <action disabled="1" id="1" name="Append text" sid="876" type="InfoBox">
                     <param id="0" name="Text"> newline &amp; newline &amp; &quot;@toonheart&quot; &amp; newline &amp; &quot;@srikrishnadas&quot; &amp; newline &amp; &quot;&lt;krish@toonheart.com&gt;&quot;</param>
                 </action>
-                <action id="1" name="Append text" sid="877" type="InfoBox">
+                <action disabled="1" id="1" name="Append text" sid="877" type="InfoBox">
                     <param id="0" name="Text">  newline &amp; newline  &amp; &quot;Sounds:&quot; &amp; newline &amp; &quot;freesound.org, flashkit.com, Bfxr, Krish&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="6682733793677538" type="InfoBox">
+                    <param id="0" name="Text">&quot;Press ENTER or TOUCH ANYWHERE to Play again!&quot;</param>
                 </action>
             </actions>
         </event-block>

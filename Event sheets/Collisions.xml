@@ -14,9 +14,12 @@
             </conditions>
             <actions />
             <sub-events>
-                <event-block sid="141">
+                <event-block any="1" sid="141">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="142" type="player">
+                            <param id="0" name="Object">gold</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="7168962471746456" type="Touch">
                             <param id="0" name="Object">gold</param>
                         </condition>
                     </conditions>
@@ -50,9 +53,12 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="143">
+                <event-block any="1" sid="143">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="144" type="player">
+                            <param id="0" name="Object">blackkitten</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="7602291959338163" type="Touch">
                             <param id="0" name="Object">blackkitten</param>
                         </condition>
                     </conditions>
@@ -99,9 +105,12 @@
             </conditions>
             <actions />
             <sub-events>
-                <event-block sid="157">
+                <event-block any="1" sid="157">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="158" type="player">
+                            <param id="0" name="Object">money</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="5275733093768491" type="Touch">
                             <param id="0" name="Object">money</param>
                         </condition>
                     </conditions>
@@ -135,9 +144,12 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="164">
+                <event-block any="1" sid="164">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="165" type="player">
+                            <param id="0" name="Object">SADfriend</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="1734252052155172" type="Touch">
                             <param id="0" name="Object">SADfriend</param>
                         </condition>
                     </conditions>
@@ -184,9 +196,12 @@
             </conditions>
             <actions />
             <sub-events>
-                <event-block sid="173">
+                <event-block any="1" sid="173">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="174" type="player">
+                            <param id="0" name="Object">fastcar</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="4884097068517898" type="Touch">
                             <param id="0" name="Object">fastcar</param>
                         </condition>
                     </conditions>
@@ -220,9 +235,12 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="180">
+                <event-block any="1" sid="180">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="181" type="player">
+                            <param id="0" name="Object">girlFriend</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="1665900921940353" type="Touch">
                             <param id="0" name="Object">girlFriend</param>
                         </condition>
                     </conditions>
@@ -269,9 +287,12 @@
             </conditions>
             <actions />
             <sub-events>
-                <event-block sid="198">
+                <event-block any="1" sid="198">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="199" type="player">
+                            <param id="0" name="Object">SADfriend</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="3777842827025869" type="Touch">
                             <param id="0" name="Object">SADfriend</param>
                         </condition>
                     </conditions>
@@ -305,9 +326,12 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="205">
+                <event-block any="1" sid="205">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="206" type="player">
+                            <param id="0" name="Object">oldlady</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="7106951154337863" type="Touch">
                             <param id="0" name="Object">oldlady</param>
                         </condition>
                     </conditions>
@@ -354,9 +378,12 @@
             </conditions>
             <actions />
             <sub-events>
-                <event-block sid="230">
+                <event-block any="1" sid="230">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="231" type="player">
+                            <param id="0" name="Object">hotChick</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="8569890053099183" type="Touch">
                             <param id="0" name="Object">hotChick</param>
                         </condition>
                     </conditions>
@@ -390,9 +417,12 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="237">
+                <event-block any="1" sid="237">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="238" type="player">
+                            <param id="0" name="Object">blackkitten</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="4676215692218984" type="Touch">
                             <param id="0" name="Object">blackkitten</param>
                         </condition>
                     </conditions>
@@ -429,7 +459,7 @@
             </sub-events>
         </event-block>
         <comment>Level 06 Decision - Companionship</comment>
-        <event-block collapsed="1" sid="244">
+        <event-block sid="244">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="245" type="System">
                     <param id="0" name="Variable">LevelNumber</param>
@@ -439,9 +469,12 @@
             </conditions>
             <actions />
             <sub-events>
-                <event-block sid="246">
+                <event-block any="1" sid="246">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="247" type="player">
+                            <param id="0" name="Object">girlFriend</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="7341068085415958" type="Touch">
                             <param id="0" name="Object">girlFriend</param>
                         </condition>
                     </conditions>
@@ -475,9 +508,12 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="253">
+                <event-block any="1" sid="253">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="254" type="player">
+                            <param id="0" name="Object">SADfriend</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="4317412889001411" type="Touch">
                             <param id="0" name="Object">SADfriend</param>
                         </condition>
                     </conditions>
@@ -524,9 +560,12 @@
             </conditions>
             <actions />
             <sub-events>
-                <event-block sid="262">
+                <event-block any="1" sid="262">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="263" type="player">
+                            <param id="0" name="Object">blackkitten</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="7991015198352778" type="Touch">
                             <param id="0" name="Object">blackkitten</param>
                         </condition>
                     </conditions>
@@ -552,9 +591,12 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="269">
+                <event-block any="1" sid="269">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="270" type="player">
+                            <param id="0" name="Object">oldlady</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="4752019399944202" type="Touch">
                             <param id="0" name="Object">oldlady</param>
                         </condition>
                     </conditions>
@@ -593,9 +635,12 @@
             </conditions>
             <actions />
             <sub-events>
-                <event-block sid="280">
+                <event-block any="1" sid="280">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="281" type="player">
+                            <param id="0" name="Object">beer</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="7601790151274928" type="Touch">
                             <param id="0" name="Object">beer</param>
                         </condition>
                     </conditions>
@@ -629,9 +674,12 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="285">
+                <event-block any="1" sid="285">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="286" type="player">
+                            <param id="0" name="Object">blackkitten</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="2415972637553777" type="Touch">
                             <param id="0" name="Object">blackkitten</param>
                         </condition>
                     </conditions>
@@ -678,9 +726,12 @@
             </conditions>
             <actions />
             <sub-events>
-                <event-block sid="315">
+                <event-block any="1" sid="315">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="316" type="player">
+                            <param id="0" name="Object">girlFriend</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="7876563266917575" type="Touch">
                             <param id="0" name="Object">girlFriend</param>
                         </condition>
                     </conditions>
@@ -714,9 +765,12 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="322">
+                <event-block any="1" sid="322">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="323" type="player">
+                            <param id="0" name="Object">hotChick</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="790878712856055" type="Touch">
                             <param id="0" name="Object">hotChick</param>
                         </condition>
                     </conditions>
@@ -763,9 +817,12 @@
             </conditions>
             <actions />
             <sub-events>
-                <event-block sid="332">
+                <event-block any="1" sid="332">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="333" type="player">
+                            <param id="0" name="Object">burger</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="8130827114750433" type="Touch">
                             <param id="0" name="Object">burger</param>
                         </condition>
                     </conditions>
@@ -795,9 +852,12 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="339">
+                <event-block any="1" sid="339">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="340" type="player">
+                            <param id="0" name="Object">gold</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="4145471426650229" type="Touch">
                             <param id="0" name="Object">gold</param>
                         </condition>
                     </conditions>
@@ -840,9 +900,12 @@
             </conditions>
             <actions />
             <sub-events>
-                <event-block sid="348">
+                <event-block any="1" sid="348">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="349" type="player">
+                            <param id="0" name="Object">HAPPYfriend</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="5843299133541369" type="Touch">
                             <param id="0" name="Object">HAPPYfriend</param>
                         </condition>
                     </conditions>
@@ -872,9 +935,12 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="354">
+                <event-block any="1" sid="354">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="355" type="player">
+                            <param id="0" name="Object">SADfriend</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="8404916963360556" type="Touch">
                             <param id="0" name="Object">SADfriend</param>
                         </condition>
                     </conditions>
@@ -917,9 +983,12 @@
             </conditions>
             <actions />
             <sub-events>
-                <event-block sid="364">
+                <event-block any="1" sid="364">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="365" type="player">
+                            <param id="0" name="Object">meat</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="6731037328564138" type="Touch">
                             <param id="0" name="Object">meat</param>
                         </condition>
                     </conditions>
@@ -949,9 +1018,12 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="370">
+                <event-block any="1" sid="370">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="371" type="player">
+                            <param id="0" name="Object">blackkitten</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="827952408008504" type="Touch">
                             <param id="0" name="Object">blackkitten</param>
                         </condition>
                     </conditions>
@@ -994,9 +1066,12 @@
             </conditions>
             <actions />
             <sub-events>
-                <event-block sid="378">
+                <event-block any="1" sid="378">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="379" type="player">
+                            <param id="0" name="Object">blackkitten</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="2069092873716112" type="Touch">
                             <param id="0" name="Object">blackkitten</param>
                         </condition>
                     </conditions>
@@ -1030,9 +1105,12 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="384">
+                <event-block any="1" sid="384">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="385" type="player">
+                            <param id="0" name="Object">girlFriend</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="8601652208988237" type="Touch">
                             <param id="0" name="Object">girlFriend</param>
                         </condition>
                     </conditions>
@@ -1075,9 +1153,12 @@
             </conditions>
             <actions />
             <sub-events>
-                <event-block sid="765">
+                <event-block any="1" sid="765">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="766" type="player">
+                            <param id="0" name="Object">LikeUsFB</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="6993144284177369" type="Touch">
                             <param id="0" name="Object">LikeUsFB</param>
                         </condition>
                     </conditions>
@@ -1097,6 +1178,40 @@
                             <param id="1" name="Tag">&quot;NewWindow&quot;</param>
                         </action>
                         <action id="-2" name="Go to layout" sid="864" type="System">
+                            <param id="0" name="Layout">Level</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Level 15 - RePlay</comment>
+        <event-block collapsed="1" sid="9705347017291615">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="6800919714522632" type="System">
+                    <param id="0" name="Variable">LevelNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">15</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="3460285915653511">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="7413712993848939" type="Keyboard">
+                            <param id="0" name="Key">13 (Return)</param>
+                        </condition>
+                        <condition id="1" name="On any touch end" sid="4010074484391838" type="Touch" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="7329736729641096" type="System">
+                            <param id="0" name="Variable">LevelNumber</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="2465962177658804" type="System">
+                            <param id="0" name="Variable">ScreenChange</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="335499410379702" type="System">
                             <param id="0" name="Layout">Level</param>
                         </action>
                     </actions>

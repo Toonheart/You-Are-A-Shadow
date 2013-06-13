@@ -50,6 +50,7 @@
                 <instance type="clouds" uid="15">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -88,6 +89,7 @@
                 <instance type="grassFAR" uid="14">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -112,6 +114,7 @@
                 <instance type="grassFAR" uid="11">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -136,6 +139,7 @@
                 <instance type="grassFAR" uid="9">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -160,6 +164,7 @@
                 <instance type="grassFAR" uid="10">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -184,6 +189,7 @@
                 <instance type="grassFAR" uid="12">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -208,6 +214,7 @@
                 <instance type="grassFAR" uid="13">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -232,6 +239,7 @@
                 <instance type="land" uid="1">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -253,6 +261,7 @@
                 <instance type="grasspatches" uid="2">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -274,6 +283,7 @@
                 <instance type="grasspatches" uid="3">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -312,6 +322,7 @@
                 <instance type="beer" uid="18">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -333,6 +344,7 @@
                 <instance type="blackkitten" uid="19">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -354,6 +366,7 @@
                 <instance type="burger" uid="20">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -375,6 +388,7 @@
                 <instance type="fastcar" uid="21">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -396,6 +410,7 @@
                 <instance type="HAPPYfriend" uid="22">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -417,6 +432,7 @@
                 <instance type="SADfriend" uid="23">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -438,6 +454,7 @@
                 <instance type="girlFriend" uid="24">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -459,6 +476,7 @@
                 <instance type="gold" uid="25">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -480,6 +498,7 @@
                 <instance type="oldlady" uid="26">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -501,6 +520,7 @@
                 <instance type="hotChick" uid="27">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -522,6 +542,7 @@
                 <instance type="meat" uid="28">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -543,6 +564,7 @@
                 <instance type="money" uid="29">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -564,6 +586,7 @@
                 <instance type="player" uid="16">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -619,6 +642,7 @@
                 <instance type="depthLEFT" uid="4">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -643,6 +667,7 @@
                 <instance type="depthRIGHT" uid="5">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -667,6 +692,7 @@
                 <instance type="grassNEAR" uid="6">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -691,6 +717,7 @@
                 <instance type="clouds" uid="7">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -712,6 +739,7 @@
                 <instance type="clouds" uid="8">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -733,6 +761,7 @@
                 <instance type="CallOutBox" uid="17">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -808,6 +837,7 @@
                 <instance type="LikeUsFB" uid="38">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>

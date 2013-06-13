@@ -64,12 +64,15 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="758">
+        <event-block any="1" sid="758">
             <conditions>
                 <condition id="6" name="On object clicked" sid="759" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
                     <param id="2" name="Object clicked">LikeUsFB</param>
+                </condition>
+                <condition id="3" name="On touched object" sid="8847410853100545" type="Touch">
+                    <param id="0" name="Object">LikeUsFB</param>
                 </condition>
             </conditions>
             <actions>
