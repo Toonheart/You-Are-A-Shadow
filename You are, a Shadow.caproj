@@ -10,6 +10,8 @@
     <unique-id>1ahnhyia3yiq5</unique-id>
     <saved-with-version>13200</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Facebook" version="1">Facebook</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
@@ -17,8 +19,6 @@
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
-        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
-        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
@@ -520,18 +520,16 @@
         <object-type name="InfoBox" sid="620">
             <plugin id="Text" />
         </object-type>
-        <object-type name="LikeUsFB" sid="750">
+        <object-type name="PlayAgain" sid="750">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="751" speed="5">
-                    <frame duration="1" hotspotX="0.501859" hotspotY="0.504274">
+                    <frame duration="1" hotspotX="0.502655" hotspotY="0">
                         <collision-poly>
-                            <point x="0.0334572" y="0.0769231" />
-                            <point x="0.498141" y="0.025641" />
-                            <point x="0.981413" y="0.042735" />
-                            <point x="0.981413" y="0.957265" />
-                            <point x="0.498141" y="0.974359" />
-                            <point x="0.0371747" y="0.91453" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0.00526316" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
                         </collision-poly>
                     </frame>
                 </animation>

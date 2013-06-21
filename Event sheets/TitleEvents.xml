@@ -57,12 +57,12 @@
                 </action>
             </actions>
         </event-block>
-        <event-block any="1" sid="571">
+        <event-block collapsed="1" sid="571">
             <conditions>
                 <condition id="0" name="On key pressed" sid="572" type="Keyboard">
                     <param id="0" name="Key">13 (Return)</param>
                 </condition>
-                <condition id="1" name="On any touch end" sid="4660057060815912" type="Touch" />
+                <condition id="-4" name="Trigger once while true" sid="1941084635630776" type="System" />
             </conditions>
             <actions>
                 <action id="2" name="Log in" sid="1717677575286339" type="Facebook">
@@ -100,7 +100,7 @@
                             <param id="1" name="Value">0</param>
                         </action>
                         <action id="-16" name="Wait" sid="9789726147850141" type="System">
-                            <param id="0" name="Seconds">2</param>
+                            <param id="0" name="Seconds">1</param>
                         </action>
                         <action id="-2" name="Go to layout" sid="9674722026737161" type="System">
                             <param id="0" name="Layout">Level</param>
@@ -108,6 +108,131 @@
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block collapsed="1" sid="737415600254774">
+            <conditions>
+                <condition id="1" name="On any touch end" sid="9581390043386988" type="Touch" />
+                <condition id="-4" name="Trigger once while true" sid="4405958989856769" type="System" />
+            </conditions>
+            <actions>
+                <action id="2" name="Log in" sid="1820223742440219" type="Facebook">
+                    <param id="0" name="Stream permission">1</param>
+                    <param id="1" name="Action permission">0</param>
+                </action>
+                <action id="0" name="Play" sid="8270661598118215" type="Audio">
+                    <param id="0" name="Audio file">Pickup_Coin</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action behavior="Flash" id="0" name="Flash" sid="9500085827856506" type="pressSTART">
+                    <param id="0" name="&apos;On&apos; time">0.25</param>
+                    <param id="1" name="&apos;Off&apos; time">0.25</param>
+                    <param id="2" name="Duration">3.0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="1224990279023216">
+                    <conditions>
+                        <condition id="0" name="Is ready" sid="4892921945401972" type="Facebook" />
+                        <condition id="1" name="Is user logged in" sid="4555177610645439" type="Facebook" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="8429806375773726" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="7658556662772826" type="System">
+                            <param id="0" name="Variable">ScreenChange</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="7572263189717724" type="System">
+                            <param id="0" name="Variable">LevelNumber</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="2943080481386281" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="2741305218881021" type="System">
+                            <param id="0" name="Layout">Level</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>DEBUG</comment>
+        <event-block disabled="1" sid="8275728268709006">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="6445918266715787" type="Keyboard">
+                    <param id="0" name="Key">13 (Return)</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="2507876236197969" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="7341247518109132" type="Audio">
+                    <param id="0" name="Audio file">Pickup_Coin</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action behavior="Flash" id="0" name="Flash" sid="1282301931003893" type="pressSTART">
+                    <param id="0" name="&apos;On&apos; time">0.25</param>
+                    <param id="1" name="&apos;Off&apos; time">0.25</param>
+                    <param id="2" name="Duration">3.0</param>
+                </action>
+                <action id="-16" name="Wait" sid="2389208806463648" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action id="-9" name="Set value" sid="6126882194156723" type="System">
+                    <param id="0" name="Variable">ScreenChange</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="5127476319740734" type="System">
+                    <param id="0" name="Variable">LevelNumber</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="5617968060012615" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="5968143143792305" type="System">
+                    <param id="0" name="Layout">Level</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="9016547507389274">
+            <conditions>
+                <condition id="1" name="On any touch end" sid="5742288746908653" type="Touch" />
+                <condition id="-4" name="Trigger once while true" sid="8790701147025168" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="293788376800901" type="Audio">
+                    <param id="0" name="Audio file">Pickup_Coin</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action behavior="Flash" id="0" name="Flash" sid="1973506477227969" type="pressSTART">
+                    <param id="0" name="&apos;On&apos; time">0.25</param>
+                    <param id="1" name="&apos;Off&apos; time">0.25</param>
+                    <param id="2" name="Duration">3.0</param>
+                </action>
+                <action id="-16" name="Wait" sid="2346009034965813" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action id="-9" name="Set value" sid="1280493223260346" type="System">
+                    <param id="0" name="Variable">ScreenChange</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="168989907876675" type="System">
+                    <param id="0" name="Variable">LevelNumber</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="3226586996705697" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="233422960740022" type="System">
+                    <param id="0" name="Layout">Level</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

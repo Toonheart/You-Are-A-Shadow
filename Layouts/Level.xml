@@ -834,7 +834,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="LikeUsFB" uid="38">
+                <instance type="PlayAgain" uid="38">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -844,14 +844,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>2802.671630859</x>
-                        <y>1695.425048828</y>
+                        <x>2613</x>
+                        <y>1485</y>
                         <z>0</z>
-                        <width>540.666503906</width>
-                        <height>235.15977478</height>
+                        <width>1135.600708008</width>
+                        <height>381.883392334</height>
                         <depth>0</depth>
-                        <hotspotX>0.501858711</hotspotX>
-                        <hotspotY>0.504273534</hotspotY>
+                        <hotspotX>0.50265485</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

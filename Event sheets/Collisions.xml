@@ -459,7 +459,7 @@
             </sub-events>
         </event-block>
         <comment>Level 06 Decision - Companionship</comment>
-        <event-block sid="244">
+        <event-block collapsed="1" sid="244">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="245" type="System">
                     <param id="0" name="Variable">LevelNumber</param>
@@ -1143,7 +1143,7 @@
             </sub-events>
         </event-block>
         <comment>Level 14 - Spread the Word</comment>
-        <event-block collapsed="1" sid="763">
+        <event-block sid="763">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="764" type="System">
                     <param id="0" name="Variable">LevelNumber</param>
@@ -1153,19 +1153,17 @@
             </conditions>
             <actions />
             <sub-events>
-                <event-block any="1" sid="765">
+                <event-block disabled="1" sid="765">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="766" type="player">
-                            <param id="0" name="Object">LikeUsFB</param>
+                            <param id="0" name="Object">PlayAgain</param>
                         </condition>
-                        <condition id="3" name="On touched object" sid="6993144284177369" type="Touch">
-                            <param id="0" name="Object">LikeUsFB</param>
-                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="6155774630275855" type="System" />
                     </conditions>
                     <actions>
+                        <action id="-9" name="Destroy" sid="768" type="PlayAgain" />
                         <action behavior="8Direction" id="0" name="Stop" sid="767" type="player" />
-                        <action id="-9" name="Destroy" sid="768" type="LikeUsFB" />
-                        <action id="-10" name="Add to" sid="863" type="System">
+                        <action id="-9" name="Set value" sid="3423710532350787" type="System">
                             <param id="0" name="Variable">LevelNumber</param>
                             <param id="1" name="Value">1</param>
                         </action>
@@ -1173,11 +1171,30 @@
                             <param id="0" name="Variable">ScreenChange</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="8" name="Open URL in new window" sid="782" type="Browser">
-                            <param id="0" name="URL">&quot;https://www.facebook.com/YouAreAShadow&quot;</param>
-                            <param id="1" name="Tag">&quot;NewWindow&quot;</param>
-                        </action>
                         <action id="-2" name="Go to layout" sid="864" type="System">
+                            <param id="0" name="Layout">Level</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block disabled="1" sid="2712647732971222">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="6993144284177369" type="Touch">
+                            <param id="0" name="Object">PlayAgain</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="9784530848565417" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="817510636481624" type="PlayAgain" />
+                        <action behavior="8Direction" id="0" name="Stop" sid="7448466049036542" type="player" />
+                        <action id="-9" name="Set value" sid="5748751324688538" type="System">
+                            <param id="0" name="Variable">LevelNumber</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="5446425373073321" type="System">
+                            <param id="0" name="Variable">ScreenChange</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="8517190262815894" type="System">
                             <param id="0" name="Layout">Level</param>
                         </action>
                     </actions>
@@ -1185,7 +1202,7 @@
             </sub-events>
         </event-block>
         <comment>Level 15 - RePlay</comment>
-        <event-block collapsed="1" sid="9705347017291615">
+        <event-block disabled="1" sid="9705347017291615">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="6800919714522632" type="System">
                     <param id="0" name="Variable">LevelNumber</param>
@@ -1195,12 +1212,14 @@
             </conditions>
             <actions />
             <sub-events>
-                <event-block any="1" sid="3460285915653511">
+                <event-block any="1" disabled="1" sid="3460285915653511">
                     <conditions>
                         <condition id="0" name="On key pressed" sid="7413712993848939" type="Keyboard">
                             <param id="0" name="Key">13 (Return)</param>
                         </condition>
-                        <condition id="1" name="On any touch end" sid="4010074484391838" type="Touch" />
+                        <condition id="3" name="On touched object" sid="4010074484391838" type="Touch">
+                            <param id="0" name="Object">TiledBackground</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-9" name="Set value" sid="7329736729641096" type="System">

@@ -23,7 +23,7 @@
                         <action id="-9" name="Destroy" sid="420" type="money" />
                         <action id="-9" name="Destroy" sid="421" type="oldlady" />
                         <action id="-9" name="Destroy" sid="422" type="SADfriend" />
-                        <action id="-9" name="Destroy" sid="761" type="LikeUsFB" />
+                        <action id="-9" name="Destroy" sid="761" type="PlayAgain" />
                     </actions>
                 </event-block>
                 <comment>Text goes on callout box</comment>
@@ -721,26 +721,23 @@
                     <param id="0" name="Text"> newline &amp; newline &amp; &quot;HAVE A NICE DAY! :)&quot;</param>
                 </action>
                 <action id="-3" name="Create object" sid="762" type="System">
-                    <param id="0" name="Object to create">LikeUsFB</param>
+                    <param id="0" name="Object to create">PlayAgain</param>
                     <param id="1" name="Layer">&quot;depth&quot;</param>
                     <param id="2" name="X">land.X</param>
-                    <param id="3" name="Y">land.Y</param>
-                </action>
-                <action id="7" name="Publish wall post" sid="2560714826614559" type="Facebook">
-                    <param id="0" name="Message">facebook.FirstName &amp; &quot;is&quot; &amp; floor((max(Perversion,0)/4)*100) &amp; &quot;% PERVERT today.&quot; &amp; newline &amp; &quot;Find out your&apos;s&quot;</param>
+                    <param id="3" name="Y">LayoutHeight/2</param>
                 </action>
                 <action id="8" name="Publish link" sid="9368761990475837" type="Facebook">
-                    <param id="0" name="Message">&quot;This game is Awesome!&quot;</param>
+                    <param id="0" name="Message">&quot;&quot;</param>
                     <param id="1" name="URL">&quot;https://apps.facebook.com/377344789037084/&quot;</param>
                     <param id="2" name="Name">&quot;You are, A Shadow&quot;</param>
-                    <param id="3" name="Caption">facebook.FirstName &amp; &quot;is&quot; &amp; floor((max(Perversion,0)/4)*100) &amp; &quot;% PERVERT today.&quot; &amp; newline &amp; &quot;Find out your&apos;s&quot;</param>
-                    <param id="4" name="Description">&quot;&quot;</param>
+                    <param id="3" name="Caption">facebook.FirstName &amp; &quot; is &quot; &amp; floor((max(Friendship,0)/4)*100) &amp; &quot;% FRIENDLY today.&quot; &amp; newline &amp; &#x0D;&#x0A;&quot;Find out your&apos;s by playing!&quot;</param>
+                    <param id="4" name="Description">&quot;Fun Game of choices!&quot;</param>
                     <param id="5" name="Picture URL (optional)">&quot;http://www.ludumdare.com/compo/wp-content/compo2/233892/21211-shot0.png&quot;</param>
                 </action>
             </actions>
         </event-block>
         <comment>Credits</comment>
-        <event-block sid="854">
+        <event-block disabled="1" sid="854">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="855" type="System">
                     <param id="0" name="Variable">LevelNumber</param>

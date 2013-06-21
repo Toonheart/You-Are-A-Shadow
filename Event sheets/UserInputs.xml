@@ -69,27 +69,25 @@
                 <condition id="6" name="On object clicked" sid="759" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">LikeUsFB</param>
+                    <param id="2" name="Object clicked">PlayAgain</param>
                 </condition>
                 <condition id="3" name="On touched object" sid="8847410853100545" type="Touch">
-                    <param id="0" name="Object">LikeUsFB</param>
+                    <param id="0" name="Object">PlayAgain</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-10" name="Add to" sid="887" type="System">
+                <action id="-9" name="Destroy" sid="9582323109121646" type="PlayAgain" />
+                <action behavior="8Direction" id="0" name="Stop" sid="4043201390568336" type="player" />
+                <action id="-9" name="Set value" sid="9290529006208161" type="System">
                     <param id="0" name="Variable">LevelNumber</param>
                     <param id="1" name="Value">1</param>
                 </action>
-                <action id="-9" name="Set value" sid="888" type="System">
+                <action id="-9" name="Set value" sid="9276488936001761" type="System">
                     <param id="0" name="Variable">ScreenChange</param>
                     <param id="1" name="Value">1</param>
                 </action>
-                <action id="-2" name="Go to layout" sid="889" type="System">
+                <action id="-2" name="Go to layout" sid="924988990036097" type="System">
                     <param id="0" name="Layout">Level</param>
-                </action>
-                <action id="8" name="Open URL in new window" sid="760" type="Browser">
-                    <param id="0" name="URL">&quot;https://www.facebook.com/YouAreAShadow&quot;</param>
-                    <param id="1" name="Tag">&quot;FBpage&quot;</param>
                 </action>
             </actions>
         </event-block>
