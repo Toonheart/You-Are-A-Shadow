@@ -10,10 +10,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout>Title</layout>
-        <layout>Level</layout>
+        <layout active="1">Level</layout>
         <event-sheet>LevelEvents</event-sheet>
-        <event-sheet active="1">LevelGenerator</event-sheet>
+        <event-sheet>LevelGenerator</event-sheet>
         <event-sheet>Collisions</event-sheet>
         <event-sheet>UserInputs</event-sheet>
         <event-sheet>TitleEvents</event-sheet>
