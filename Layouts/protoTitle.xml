@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>Title</name>
+    <name>protoTitle</name>
     <sid>541</sid>
-    <event-sheet>TitleEvents</event-sheet>
+    <event-sheet>protoTitleEvents</event-sheet>
     <size>
         <width>1536</width>
         <height>2048</height>

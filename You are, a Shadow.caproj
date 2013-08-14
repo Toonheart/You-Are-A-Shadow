@@ -10,19 +10,19 @@
     <unique-id>1ahnhyia3yiq5</unique-id>
     <saved-with-version>13200</saved-with-version>
     <used-plugins>
-        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
-        <plugin author="Scirra" id="Facebook" version="1">Facebook</plugin>
-        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Facebook" version="1">Facebook</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
     </used-plugins>
     <used-behaviors>
-        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
@@ -31,11 +31,11 @@
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>1536</width>
-        <height>2048</height>
+        <width>1280</width>
+        <height>800</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
-    <first-layout>Title</first-layout>
+    <first-layout>protoTitle</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -262,6 +262,11 @@
         </object-type>
         <object-type name="blackkitten" sid="26">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Flash" sid="9223968237447966">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="27" speed="5">
                     <frame duration="1" hotspotX="0.501085" hotspotY="0.5">
@@ -318,6 +323,11 @@
         </object-type>
         <object-type name="HAPPYfriend" sid="32">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Flash" sid="2506095174112523">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="33" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.501241">
@@ -550,19 +560,58 @@
         <object-type name="Touch" sid="1884830869234146">
             <plugin id="Touch" />
         </object-type>
+        <object-type name="DebugText" sid="3868796981179215">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="crocodile" sid="6673255775317934">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="hit points before destroy" name="hitpoint" sid="9079983326186028" type="number" />
+                <instance-variable comment="speed in px at which the object moves" name="MoveSpeed" sid="7460437909760566" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Flash" sid="7210373374567472">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="34205362824726" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.976471" y="0.5" />
+                            <point x="0.829412" y="0.726415" />
+                            <point x="0.5" y="0.839623" />
+                            <point x="0.158824" y="0.745283" />
+                            <point x="0" y="0.5" />
+                            <point x="0.0529412" y="0.0849057" />
+                            <point x="0.5" y="0.45283" />
+                            <point x="0.841176" y="0.254717" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
-        <layout>Level.xml</layout>
-        <layout>Title.xml</layout>
+        <layout>protoLevel.xml</layout>
+        <layout>protoTitle.xml</layout>
+        <layout>protoLevel2.xml</layout>
+        <layout>GraphicStore.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
-        <event-sheet>LevelEvents.xml</event-sheet>
+        <event-sheet>protoLevel_Events.xml</event-sheet>
         <event-sheet>LevelGenerator.xml</event-sheet>
-        <event-sheet>UserInputs.xml</event-sheet>
-        <event-sheet>Collisions.xml</event-sheet>
+        <event-sheet>protoUserInputs.xml</event-sheet>
+        <event-sheet>protoCollisions.xml</event-sheet>
         <event-sheet>Fades.xml</event-sheet>
-        <event-sheet>TitleEvents.xml</event-sheet>
+        <event-sheet>protoTitleEvents.xml</event-sheet>
+        <event-sheet>protoLevel2_Events.xml</event-sheet>
+        <event-sheet>GameplayGenerator.xml</event-sheet>
+        <event-sheet>Debug.xml</event-sheet>
+        <event-sheet>Collisions.xml</event-sheet>
+        <event-sheet>UserControls.xml</event-sheet>
+        <event-sheet>AllGlobalVariables.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="31" />

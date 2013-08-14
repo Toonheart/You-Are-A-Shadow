@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Debug</name>
+    <events>
+        <event-block sid="4233199371675589">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="3698087708246873" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="8533053151234908" type="DebugText">
+                    <param id="0" name="Text">&quot;Croc cnt : &quot; &amp; crocodile.Count&#x0D;&#x0A;&amp; newline &amp;&#x0D;&#x0A;&quot;Croc X: &quot; &amp; crocodile.X</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

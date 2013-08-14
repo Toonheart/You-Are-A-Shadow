@@ -111,7 +111,7 @@
                     <param id="1" name="Value">1</param>
                 </action>
                 <action id="-2" name="Go to layout" sid="640" type="System">
-                    <param id="0" name="Layout">Level</param>
+                    <param id="0" name="Layout">protoLevel</param>
                 </action>
             </actions>
         </event-block>

@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>GameplayGenerator</name>
+    <events>
+        <event-group description="spawning characters on map" sid="645521611485388" title="Human Spawn Waves">
+            <sub-events>
+                <event-block sid="4348577514752593">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="2592544229041135" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="7804289540651945" type="System">
+                            <param id="0" name="Object to create">HAPPYfriend</param>
+                            <param id="1" name="Layer">&quot;Objects&quot;</param>
+                            <param id="2" name="X">LayoutWidth+200</param>
+                            <param id="3" name="Y">random((LayoutHeight/3),(LayoutHeight-100))</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="2431377156376923" type="System">
+                            <param id="0" name="Object to create">blackkitten</param>
+                            <param id="1" name="Layer">&quot;Objects&quot;</param>
+                            <param id="2" name="X">-200</param>
+                            <param id="3" name="Y">random((LayoutHeight/3),(LayoutHeight-100))</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="8122699447629343" type="System">
+                            <param id="0" name="Object to create">crocodile</param>
+                            <param id="1" name="Layer">&quot;Objects&quot;</param>
+                            <param id="2" name="X">-200</param>
+                            <param id="3" name="Y">random((LayoutHeight/3),(LayoutHeight-100))</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Spawning every x secs</comment>
+                <event-block sid="1902476659750618">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="6926866867715845" type="System">
+                            <param id="0" name="Interval (seconds)">5</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="12321956821181" type="System">
+                            <param id="0" name="First value">HAPPYfriend.Count</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Second value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="2184534825443344" type="System">
+                            <param id="0" name="Object to create">HAPPYfriend</param>
+                            <param id="1" name="Layer">&quot;Objects&quot;</param>
+                            <param id="2" name="X">LayoutWidth+200</param>
+                            <param id="3" name="Y">random((LayoutHeight/3),(LayoutHeight-100))</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>On spawn set size - remove this later when correct size images are made</comment>
+                <event-block sid="2890919316646319">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="4688722300984847" type="HAPPYfriend" />
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="2118463480901383" type="HAPPYfriend">
+                            <param id="0" name="Width">194</param>
+                            <param id="1" name="Height">295</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Move Left - FOR NOW. Later need a nice algo to dynamic spawn and move in opp direction to spawn point max vertice</comment>
+                <event-block sid="2660011769850545">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="9444181452962178" type="HAPPYfriend">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">-100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-23" name="Move at angle" sid="295445375818333" type="HAPPYfriend">
+                            <param id="0" name="Angle">180</param>
+                            <param id="1" name="Distance">5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Destroy on reached goal - FOR NOW. Later add a goal.</comment>
+                <event-block sid="1318162733599261">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="8457658256696739" type="HAPPYfriend">
+                            <param id="0" name="Comparison">3</param>
+                            <param id="1" name="X co-ordinate">-100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="5948861600058772" type="HAPPYfriend" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="spawning creatures both cute and dangerous" sid="5557234057701309" title="Creature Spawn Waves">
+            <sub-events>
+                <comment>Spawning every x secs</comment>
+                <event-block sid="566889105447998">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="5498820515748783" type="System">
+                            <param id="0" name="Interval (seconds)">5</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="809058518538989" type="System">
+                            <param id="0" name="First value">blackkitten.Count</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Second value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="6437183204050781" type="System">
+                            <param id="0" name="Object to create">blackkitten</param>
+                            <param id="1" name="Layer">&quot;Objects&quot;</param>
+                            <param id="2" name="X">-200</param>
+                            <param id="3" name="Y">random((LayoutHeight/3),(LayoutHeight-100))</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6515297838536375">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="9328897742892582" type="System">
+                            <param id="0" name="Interval (seconds)">10</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="9939443018769241" type="System">
+                            <param id="0" name="First value">crocodile.Count</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Second value">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="9953432907339918" type="System">
+                            <param id="0" name="Object to create">crocodile</param>
+                            <param id="1" name="Layer">&quot;Objects&quot;</param>
+                            <param id="2" name="X">-200</param>
+                            <param id="3" name="Y">random((LayoutHeight/3),(LayoutHeight-100))</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>On spawn set size - remove this later when correct size images are made</comment>
+                <event-block sid="1549725938734461">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="1326405705243356" type="blackkitten" />
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="8798387781969706" type="blackkitten">
+                            <param id="0" name="Width">90</param>
+                            <param id="1" name="Height">120</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Move Right - FOR NOW. Later need a nice algo to dynamic spawn and move in opp direction to spawn point max vertice</comment>
+                <event-block sid="3059564824732039">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="3360379364117865" type="blackkitten">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">LayoutWidth+100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-23" name="Move at angle" sid="8643403621355124" type="blackkitten">
+                            <param id="0" name="Angle">0</param>
+                            <param id="1" name="Distance">5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7335274928229948">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="1441574461470656" type="crocodile">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">LayoutWidth+100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-23" name="Move at angle" sid="4248790859571114" type="crocodile">
+                            <param id="0" name="Angle">0</param>
+                            <param id="1" name="Distance">self.MoveSpeed</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Destroy on reached goal - FOR NOW. Later add a goal.</comment>
+                <event-block sid="6409558511445198">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="6796702384377977" type="blackkitten">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="X co-ordinate">LayoutWidth+100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="7576002980677691" type="blackkitten" />
+                    </actions>
+                </event-block>
+                <event-block sid="2776754202932211">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="8787483314281597" type="crocodile">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="X co-ordinate">LayoutWidth+100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="8886392050660851" type="crocodile" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

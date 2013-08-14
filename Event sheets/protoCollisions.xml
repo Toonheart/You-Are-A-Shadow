@@ -1,0 +1,1241 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>protoCollisions</name>
+    <events>
+        <comment>Level 01 Decision - My precious</comment>
+        <event-block collapsed="1" sid="139">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="140" type="System">
+                    <param id="0" name="Variable">LevelNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="141">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="142" type="player">
+                            <param id="0" name="Object">gold</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="7168962471746456" type="Touch">
+                            <param id="0" name="Object">gold</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="826" type="Audio">
+                            <param id="0" name="Audio file">Pickup_Coin</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="8Direction" id="0" name="Stop" sid="145" type="player" />
+                        <action id="-9" name="Destroy" sid="148" type="gold" />
+                        <action id="-10" name="Add to" sid="147" type="System">
+                            <param id="0" name="Variable">Greed</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="149" type="System">
+                            <param id="0" name="Variable">Kindness</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="427" type="System">
+                            <param id="0" name="Variable">LevelNumber</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="146" type="System">
+                            <param id="0" name="Variable">ScreenChange</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="429" type="System">
+                            <param id="0" name="Layout">protoLevel</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="143">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="144" type="player">
+                            <param id="0" name="Object">blackkitten</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="7602291959338163" type="Touch">
+                            <param id="0" name="Object">blackkitten</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="827" type="Audio">
+                            <param id="0" name="Audio file">meow</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="8Direction" id="0" name="Stop" sid="150" type="player" />
+                        <action id="-9" name="Destroy" sid="151" type="blackkitten" />
+                        <action id="-10" name="Add to" sid="153" type="System">
+                            <param id="0" name="Variable">Kindness</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="154" type="System">
+                            <param id="0" name="Variable">Greed</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="428" type="System">
+                            <param id="0" name="Variable">LevelNumber</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="152" type="System">
+                            <param id="0" name="Variable">ScreenChange</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="430" type="System">
+                            <param id="0" name="Layout">protoLevel</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Level 02 Decision - The green Friend</comment>
+        <event-block collapsed="1" sid="155">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="156" type="System">
+                    <param id="0" name="Variable">LevelNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="157">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="158" type="player">
+                            <param id="0" name="Object">money</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="5275733093768491" type="Touch">
+                            <param id="0" name="Object">money</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="828" type="Audio">
+                            <param id="0" name="Audio file">Pickup_Coin</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="8Direction" id="0" name="Stop" sid="159" type="player" />
+                        <action id="-9" name="Destroy" sid="160" type="money" />
+                        <action id="-10" name="Add to" sid="162" type="System">
+                            <param id="0" name="Variable">Greed</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="163" type="System">
+                            <param id="0" name="Variable">Friendship</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="441" type="System">
+                            <param id="0" name="Variable">LevelNumber</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="161" type="System">
+                            <param id="0" name="Variable">ScreenChange</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="442" type="System">
+                            <param id="0" name="Layout">protoLevel</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="164">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="165" type="player">
+                            <param id="0" name="Object">SADfriend</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="1734252052155172" type="Touch">
+                            <param id="0" name="Object">SADfriend</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="829" type="Audio">
+                            <param id="0" name="Audio file">Pickup_Coin</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="8Direction" id="0" name="Stop" sid="166" type="player" />
+                        <action id="-9" name="Destroy" sid="167" type="SADfriend" />
+                        <action id="-10" name="Add to" sid="169" type="System">
+                            <param id="0" name="Variable">Friendship</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="170" type="System">
+                            <param id="0" name="Variable">Greed</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="443" type="System">
+                            <param id="0" name="Variable">LevelNumber</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="168" type="System">
+                            <param id="0" name="Variable">ScreenChange</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="444" type="System">
+                            <param id="0" name="Layout">protoLevel</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Level 03 Decision - What makes your heart go Faster?</comment>
+        <event-block collapsed="1" sid="171">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="172" type="System">
+                    <param id="0" name="Variable">LevelNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="173">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="174" type="player">
+                            <param id="0" name="Object">fastcar</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="4884097068517898" type="Touch">
+                            <param id="0" name="Object">fastcar</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="830" type="Audio">
+                            <param id="0" name="Audio file">Pickup_Coin</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="8Direction" id="0" name="Stop" sid="175" type="player" />
+                        <action id="-9" name="Destroy" sid="176" type="money" />
+                        <action id="-10" name="Add to" sid="178" type="System">
+                            <param id="0" name="Variable">Greed</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="179" type="System">
+                            <param id="0" name="Variable">Friendship</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="445" type="System">
+                            <param id="0" name="Variable">LevelNumber</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="177" type="System">
+                            <param id="0" name="Variable">ScreenChange</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="446" type="System">
+                            <param id="0" name="Layout">protoLevel</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="180">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="181" type="player">
+                            <param id="0" name="Object">girlFriend</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="1665900921940353" type="Touch">
+                            <param id="0" name="Object">girlFriend</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="831" type="Audio">
+                            <param id="0" name="Audio file">OhYeahGirl</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="8Direction" id="0" name="Stop" sid="182" type="player" />
+                        <action id="-9" name="Destroy" sid="183" type="girlFriend" />
+                        <action id="-10" name="Add to" sid="185" type="System">
+                            <param id="0" name="Variable">Friendship</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="186" type="System">
+                            <param id="0" name="Variable">Greed</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="447" type="System">
+                            <param id="0" name="Variable">LevelNumber</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="184" type="System">
+                            <param id="0" name="Variable">ScreenChange</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="448" type="System">
+                            <param id="0" name="Layout">protoLevel</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Level 04 Decision - The Karma wise</comment>
+        <event-block collapsed="1" sid="196">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="197" type="System">
+                    <param id="0" name="Variable">LevelNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="198">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="199" type="player">
+                            <param id="0" name="Object">SADfriend</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="3777842827025869" type="Touch">
+                            <param id="0" name="Object">SADfriend</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="832" type="Audio">
+                            <param id="0" name="Audio file">Pickup_Coin</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="8Direction" id="0" name="Stop" sid="200" type="player" />
+                        <action id="-9" name="Destroy" sid="201" type="SADfriend" />
+                        <action id="-10" name="Add to" sid="203" type="System">
+                            <param id="0" name="Variable">Friendship</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="204" type="System">
+                            <param id="0" name="Variable">Kindness</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="449" type="System">
+                            <param id="0" name="Variable">LevelNumber</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="202" type="System">
+                            <param id="0" name="Variable">ScreenChange</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="450" type="System">
+                            <param id="0" name="Layout">protoLevel</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="205">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="206" type="player">
+                            <param id="0" name="Object">oldlady</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="7106951154337863" type="Touch">
+                            <param id="0" name="Object">oldlady</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="833" type="Audio">
+                            <param id="0" name="Audio file">oldlady</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">20</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="8Direction" id="0" name="Stop" sid="207" type="player" />
+                        <action id="-9" name="Destroy" sid="208" type="oldlady" />
+                        <action id="-10" name="Add to" sid="210" type="System">
+                            <param id="0" name="Variable">Kindness</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="211" type="System">
+                            <param id="0" name="Variable">Friendship</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="451" type="System">
+                            <param id="0" name="Variable">LevelNumber</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="209" type="System">
+                            <param id="0" name="Variable">ScreenChange</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="452" type="System">
+                            <param id="0" name="Layout">protoLevel</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Level 05 Decision - A chance of Life, time.</comment>
+        <event-block collapsed="1" sid="228">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="229" type="System">
+                    <param id="0" name="Variable">LevelNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="230">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="231" type="player">
+                            <param id="0" name="Object">hotChick</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="8569890053099183" type="Touch">
+                            <param id="0" name="Object">hotChick</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="834" type="Audio">
+                            <param id="0" name="Audio file">OhYeahGirl</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="8Direction" id="0" name="Stop" sid="232" type="player" />
+                        <action id="-9" name="Destroy" sid="233" type="hotChick" />
+                        <action id="-10" name="Add to" sid="235" type="System">
+                            <param id="0" name="Variable">Perversion</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="236" type="System">
+                            <param id="0" name="Variable">Kindness</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="453" type="System">
+                            <param id="0" name="Variable">LevelNumber</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="234" type="System">
+                            <param id="0" name="Variable">ScreenChange</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="454" type="System">
+                            <param id="0" name="Layout">protoLevel</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="237">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="238" type="player">
+                            <param id="0" name="Object">blackkitten</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="4676215692218984" type="Touch">
+                            <param id="0" name="Object">blackkitten</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="835" type="Audio">
+                            <param id="0" name="Audio file">meow</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="8Direction" id="0" name="Stop" sid="239" type="player" />
+                        <action id="-9" name="Destroy" sid="240" type="blackkitten" />
+                        <action id="-10" name="Add to" sid="242" type="System">
+                            <param id="0" name="Variable">Kindness</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="243" type="System">
+                            <param id="0" name="Variable">Perversion</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="455" type="System">
+                            <param id="0" name="Variable">LevelNumber</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="241" type="System">
+                            <param id="0" name="Variable">ScreenChange</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="456" type="System">
+                            <param id="0" name="Layout">protoLevel</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Level 06 Decision - Companionship</comment>
+        <event-block collapsed="1" sid="244">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="245" type="System">
+                    <param id="0" name="Variable">LevelNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">6</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="246">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="247" type="player">
+                            <param id="0" name="Object">girlFriend</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="7341068085415958" type="Touch">
+                            <param id="0" name="Object">girlFriend</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="836" type="Audio">
+                            <param id="0" name="Audio file">OhYeahGirl</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="8Direction" id="0" name="Stop" sid="248" type="player" />
+                        <action id="-9" name="Destroy" sid="249" type="girlFriend" />
+                        <action id="-10" name="Add to" sid="251" type="System">
+                            <param id="0" name="Variable">Perversion</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="252" type="System">
+                            <param id="0" name="Variable">Friendship</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="457" type="System">
+                            <param id="0" name="Variable">LevelNumber</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="250" type="System">
+                            <param id="0" name="Variable">ScreenChange</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="458" type="System">
+                            <param id="0" name="Layout">protoLevel</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="253">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="254" type="player">
+                            <param id="0" name="Object">SADfriend</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="4317412889001411" type="Touch">
+                            <param id="0" name="Object">SADfriend</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="837" type="Audio">
+                            <param id="0" name="Audio file">Pickup_Coin</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="8Direction" id="0" name="Stop" sid="255" type="player" />
+                        <action id="-9" name="Destroy" sid="256" type="SADfriend" />
+                        <action id="-10" name="Add to" sid="258" type="System">
+                            <param id="0" name="Variable">Friendship</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="259" type="System">
+                            <param id="0" name="Variable">Perversion</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="459" type="System">
+                            <param id="0" name="Variable">LevelNumber</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="257" type="System">
+                            <param id="0" name="Variable">ScreenChange</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="460" type="System">
+                            <param id="0" name="Layout">protoLevel</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Level 07 Decision -  The Tough Call</comment>
+        <event-block collapsed="1" sid="260">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="261" type="System">
+                    <param id="0" name="Variable">LevelNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">7</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="262">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="263" type="player">
+                            <param id="0" name="Object">blackkitten</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="7991015198352778" type="Touch">
+                            <param id="0" name="Object">blackkitten</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="838" type="Audio">
+                            <param id="0" name="Audio file">meow</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="8Direction" id="0" name="Stop" sid="264" type="player" />
+                        <action id="-9" name="Destroy" sid="265" type="blackkitten" />
+                        <action id="-9" name="Set value" sid="266" type="System">
+                            <param id="0" name="Variable">ScreenChange</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="461" type="System">
+                            <param id="0" name="Variable">LevelNumber</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="462" type="System">
+                            <param id="0" name="Layout">protoLevel</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="269">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="270" type="player">
+                            <param id="0" name="Object">oldlady</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="4752019399944202" type="Touch">
+                            <param id="0" name="Object">oldlady</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="839" type="Audio">
+                            <param id="0" name="Audio file">oldlady</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">20</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="8Direction" id="0" name="Stop" sid="271" type="player" />
+                        <action id="-9" name="Destroy" sid="272" type="oldlady" />
+                        <action id="-10" name="Add to" sid="465" type="System">
+                            <param id="0" name="Variable">LevelNumber</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="273" type="System">
+                            <param id="0" name="Variable">ScreenChange</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="466" type="System">
+                            <param id="0" name="Layout">protoLevel</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Level 08 Decision - Goofed Up</comment>
+        <event-block collapsed="1" sid="278">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="279" type="System">
+                    <param id="0" name="Variable">LevelNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">8</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="280">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="281" type="player">
+                            <param id="0" name="Object">beer</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="7601790151274928" type="Touch">
+                            <param id="0" name="Object">beer</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="840" type="Audio">
+                            <param id="0" name="Audio file">Pickup_Coin</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="8Direction" id="0" name="Stop" sid="282" type="player" />
+                        <action id="-9" name="Destroy" sid="283" type="beer" />
+                        <action id="-10" name="Add to" sid="292" type="System">
+                            <param id="0" name="Variable">Goofy</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="293" type="System">
+                            <param id="0" name="Variable">Kindness</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="467" type="System">
+                            <param id="0" name="Variable">LevelNumber</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="284" type="System">
+                            <param id="0" name="Variable">ScreenChange</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="468" type="System">
+                            <param id="0" name="Layout">protoLevel</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="285">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="286" type="player">
+                            <param id="0" name="Object">blackkitten</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="2415972637553777" type="Touch">
+                            <param id="0" name="Object">blackkitten</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="841" type="Audio">
+                            <param id="0" name="Audio file">meow</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="8Direction" id="0" name="Stop" sid="287" type="player" />
+                        <action id="-9" name="Destroy" sid="288" type="blackkitten" />
+                        <action id="-10" name="Add to" sid="294" type="System">
+                            <param id="0" name="Variable">Kindness</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="392" type="System">
+                            <param id="0" name="Variable">Goofy</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="469" type="System">
+                            <param id="0" name="Variable">LevelNumber</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="289" type="System">
+                            <param id="0" name="Variable">ScreenChange</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="470" type="System">
+                            <param id="0" name="Layout">protoLevel</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Level 09 Decision - Desire to Cheat</comment>
+        <event-block collapsed="1" sid="313">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="314" type="System">
+                    <param id="0" name="Variable">LevelNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">9</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="315">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="316" type="player">
+                            <param id="0" name="Object">girlFriend</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="7876563266917575" type="Touch">
+                            <param id="0" name="Object">girlFriend</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="842" type="Audio">
+                            <param id="0" name="Audio file">OhYeahGirl</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="8Direction" id="0" name="Stop" sid="317" type="player" />
+                        <action id="-9" name="Destroy" sid="318" type="girlFriend" />
+                        <action id="-10" name="Add to" sid="320" type="System">
+                            <param id="0" name="Variable">Friendship</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="321" type="System">
+                            <param id="0" name="Variable">Perversion</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="471" type="System">
+                            <param id="0" name="Variable">LevelNumber</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="319" type="System">
+                            <param id="0" name="Variable">ScreenChange</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="472" type="System">
+                            <param id="0" name="Layout">protoLevel</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="322">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="323" type="player">
+                            <param id="0" name="Object">hotChick</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="790878712856055" type="Touch">
+                            <param id="0" name="Object">hotChick</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="843" type="Audio">
+                            <param id="0" name="Audio file">OhYeahGirl</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="8Direction" id="0" name="Stop" sid="324" type="player" />
+                        <action id="-9" name="Destroy" sid="325" type="hotChick" />
+                        <action id="-10" name="Add to" sid="327" type="System">
+                            <param id="0" name="Variable">Perversion</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="329" type="System">
+                            <param id="0" name="Variable">Friendship</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="473" type="System">
+                            <param id="0" name="Variable">LevelNumber</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="326" type="System">
+                            <param id="0" name="Variable">ScreenChange</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="474" type="System">
+                            <param id="0" name="Layout">protoLevel</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Level 10 Decision - Human Needs</comment>
+        <event-block collapsed="1" sid="330">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="331" type="System">
+                    <param id="0" name="Variable">LevelNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">10</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="332">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="333" type="player">
+                            <param id="0" name="Object">burger</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="8130827114750433" type="Touch">
+                            <param id="0" name="Object">burger</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="844" type="Audio">
+                            <param id="0" name="Audio file">Pickup_Coin</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="8Direction" id="0" name="Stop" sid="334" type="player" />
+                        <action id="-9" name="Destroy" sid="335" type="burger" />
+                        <action id="-11" name="Subtract from" sid="338" type="System">
+                            <param id="0" name="Variable">Greed</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="475" type="System">
+                            <param id="0" name="Variable">LevelNumber</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="336" type="System">
+                            <param id="0" name="Variable">ScreenChange</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="476" type="System">
+                            <param id="0" name="Layout">protoLevel</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="339">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="340" type="player">
+                            <param id="0" name="Object">gold</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="4145471426650229" type="Touch">
+                            <param id="0" name="Object">gold</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="845" type="Audio">
+                            <param id="0" name="Audio file">Pickup_Coin</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="8Direction" id="0" name="Stop" sid="341" type="player" />
+                        <action id="-9" name="Destroy" sid="342" type="gold" />
+                        <action id="-10" name="Add to" sid="344" type="System">
+                            <param id="0" name="Variable">Greed</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="477" type="System">
+                            <param id="0" name="Variable">LevelNumber</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="343" type="System">
+                            <param id="0" name="Variable">ScreenChange</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="478" type="System">
+                            <param id="0" name="Layout">protoLevel</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Level 11 Decision - Desert a Friend</comment>
+        <event-block collapsed="1" sid="346">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="347" type="System">
+                    <param id="0" name="Variable">LevelNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">11</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="348">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="349" type="player">
+                            <param id="0" name="Object">HAPPYfriend</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="5843299133541369" type="Touch">
+                            <param id="0" name="Object">HAPPYfriend</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="846" type="Audio">
+                            <param id="0" name="Audio file">Pickup_Coin</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="8Direction" id="0" name="Stop" sid="350" type="player" />
+                        <action id="-9" name="Destroy" sid="351" type="HAPPYfriend" />
+                        <action id="-11" name="Subtract from" sid="353" type="System">
+                            <param id="0" name="Variable">Friendship</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="479" type="System">
+                            <param id="0" name="Variable">LevelNumber</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="360" type="System">
+                            <param id="0" name="Variable">ScreenChange</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="480" type="System">
+                            <param id="0" name="Layout">protoLevel</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="354">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="355" type="player">
+                            <param id="0" name="Object">SADfriend</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="8404916963360556" type="Touch">
+                            <param id="0" name="Object">SADfriend</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="847" type="Audio">
+                            <param id="0" name="Audio file">Pickup_Coin</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="8Direction" id="0" name="Stop" sid="356" type="player" />
+                        <action id="-9" name="Destroy" sid="357" type="SADfriend" />
+                        <action id="-10" name="Add to" sid="359" type="System">
+                            <param id="0" name="Variable">Friendship</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="481" type="System">
+                            <param id="0" name="Variable">LevelNumber</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="361" type="System">
+                            <param id="0" name="Variable">ScreenChange</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="482" type="System">
+                            <param id="0" name="Layout">protoLevel</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Level 12 Decision - Starve</comment>
+        <event-block collapsed="1" sid="362">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="363" type="System">
+                    <param id="0" name="Variable">LevelNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">12</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="364">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="365" type="player">
+                            <param id="0" name="Object">meat</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="6731037328564138" type="Touch">
+                            <param id="0" name="Object">meat</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="848" type="Audio">
+                            <param id="0" name="Audio file">Pickup_Coin</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="8Direction" id="0" name="Stop" sid="366" type="player" />
+                        <action id="-9" name="Destroy" sid="367" type="meat" />
+                        <action id="-11" name="Subtract from" sid="368" type="System">
+                            <param id="0" name="Variable">Kindness</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="483" type="System">
+                            <param id="0" name="Variable">LevelNumber</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="369" type="System">
+                            <param id="0" name="Variable">ScreenChange</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="484" type="System">
+                            <param id="0" name="Layout">protoLevel</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="370">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="371" type="player">
+                            <param id="0" name="Object">blackkitten</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="827952408008504" type="Touch">
+                            <param id="0" name="Object">blackkitten</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="849" type="Audio">
+                            <param id="0" name="Audio file">meow</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="8Direction" id="0" name="Stop" sid="372" type="player" />
+                        <action id="-9" name="Destroy" sid="373" type="blackkitten" />
+                        <action id="-10" name="Add to" sid="374" type="System">
+                            <param id="0" name="Variable">Kindness</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="485" type="System">
+                            <param id="0" name="Variable">LevelNumber</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="375" type="System">
+                            <param id="0" name="Variable">ScreenChange</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="486" type="System">
+                            <param id="0" name="Layout">protoLevel</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Level 13 Decision - What is Logical?</comment>
+        <event-block collapsed="1" sid="376">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="377" type="System">
+                    <param id="0" name="Variable">LevelNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">13</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="378">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="379" type="player">
+                            <param id="0" name="Object">blackkitten</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="2069092873716112" type="Touch">
+                            <param id="0" name="Object">blackkitten</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="850" type="Audio">
+                            <param id="0" name="Audio file">meow</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="8Direction" id="0" name="Stop" sid="380" type="player" />
+                        <action id="-9" name="Destroy" sid="381" type="blackkitten" />
+                        <action id="-10" name="Add to" sid="390" type="System">
+                            <param id="0" name="Variable">Kindness</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="382" type="System">
+                            <param id="0" name="Variable">Perversion</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="487" type="System">
+                            <param id="0" name="Variable">LevelNumber</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="383" type="System">
+                            <param id="0" name="Variable">ScreenChange</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="488" type="System">
+                            <param id="0" name="Layout">protoLevel</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="384">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="385" type="player">
+                            <param id="0" name="Object">girlFriend</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="8601652208988237" type="Touch">
+                            <param id="0" name="Object">girlFriend</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="851" type="Audio">
+                            <param id="0" name="Audio file">OhYeahGirl</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="8Direction" id="0" name="Stop" sid="386" type="player" />
+                        <action id="-9" name="Destroy" sid="387" type="girlFriend" />
+                        <action id="-11" name="Subtract from" sid="391" type="System">
+                            <param id="0" name="Variable">Kindness</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="489" type="System">
+                            <param id="0" name="Variable">LevelNumber</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="389" type="System">
+                            <param id="0" name="Variable">ScreenChange</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="490" type="System">
+                            <param id="0" name="Layout">protoLevel</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Level 14 - Spread the Word</comment>
+        <event-block sid="763">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="764" type="System">
+                    <param id="0" name="Variable">LevelNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">14</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block disabled="1" sid="765">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="766" type="player">
+                            <param id="0" name="Object">PlayAgain</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="6155774630275855" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="768" type="PlayAgain" />
+                        <action behavior="8Direction" id="0" name="Stop" sid="767" type="player" />
+                        <action id="-9" name="Set value" sid="3423710532350787" type="System">
+                            <param id="0" name="Variable">LevelNumber</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="772" type="System">
+                            <param id="0" name="Variable">ScreenChange</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="864" type="System">
+                            <param id="0" name="Layout">protoLevel</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block disabled="1" sid="2712647732971222">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="6993144284177369" type="Touch">
+                            <param id="0" name="Object">PlayAgain</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="9784530848565417" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="817510636481624" type="PlayAgain" />
+                        <action behavior="8Direction" id="0" name="Stop" sid="7448466049036542" type="player" />
+                        <action id="-9" name="Set value" sid="5748751324688538" type="System">
+                            <param id="0" name="Variable">LevelNumber</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="5446425373073321" type="System">
+                            <param id="0" name="Variable">ScreenChange</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="8517190262815894" type="System">
+                            <param id="0" name="Layout">protoLevel</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Level 15 - RePlay</comment>
+        <event-block disabled="1" sid="9705347017291615">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="6800919714522632" type="System">
+                    <param id="0" name="Variable">LevelNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">15</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" disabled="1" sid="3460285915653511">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="7413712993848939" type="Keyboard">
+                            <param id="0" name="Key">13 (Return)</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="4010074484391838" type="Touch">
+                            <param id="0" name="Object">TiledBackground</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="7329736729641096" type="System">
+                            <param id="0" name="Variable">LevelNumber</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="2465962177658804" type="System">
+                            <param id="0" name="Variable">ScreenChange</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="335499410379702" type="System">
+                            <param id="0" name="Layout">protoLevel</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

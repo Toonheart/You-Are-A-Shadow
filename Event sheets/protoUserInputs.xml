@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>UserInputs</name>
+    <name>protoUserInputs</name>
     <events>
         <event-group description="" sid="80" title="Movement Controls" />
         <event-block any="1" sid="64">
@@ -87,7 +87,7 @@
                     <param id="1" name="Value">1</param>
                 </action>
                 <action id="-2" name="Go to layout" sid="924988990036097" type="System">
-                    <param id="0" name="Layout">Level</param>
+                    <param id="0" name="Layout">protoLevel</param>
                 </action>
             </actions>
         </event-block>

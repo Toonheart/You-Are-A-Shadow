@@ -10,17 +10,17 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1">Level</layout>
-        <event-sheet>LevelEvents</event-sheet>
-        <event-sheet>LevelGenerator</event-sheet>
-        <event-sheet>Collisions</event-sheet>
-        <event-sheet>UserInputs</event-sheet>
-        <event-sheet>TitleEvents</event-sheet>
+        <layout>protoLevel2</layout>
+        <layout>GraphicStore</layout>
+        <event-sheet>protoLevel2_Events</event-sheet>
+        <event-sheet active="1">GameplayGenerator</event-sheet>
+        <event-sheet>Debug</event-sheet>
+        <event-sheet>UserControls</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
         <property expanded="1" name="Project settings" />
-        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Window Size" />
         <property expanded="1" name="Configuration Settings" />
     </properties>
     <families-expanded root="1" />

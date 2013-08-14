@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>protoLevel2_Events</name>
+    <events>
+        <include>UserControls</include>
+        <include>Collisions</include>
+        <include>Debug</include>
+        <include>GameplayGenerator</include>
+    </events>
+</c2eventsheet>

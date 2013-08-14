@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>TitleEvents</name>
+    <name>protoTitleEvents</name>
     <events>
         <include>Fades</include>
         <event-block sid="545">
@@ -103,7 +103,7 @@
                             <param id="0" name="Seconds">1</param>
                         </action>
                         <action id="-2" name="Go to layout" sid="9674722026737161" type="System">
-                            <param id="0" name="Layout">Level</param>
+                            <param id="0" name="Layout">protoLevel</param>
                         </action>
                     </actions>
                 </event-block>
@@ -153,7 +153,7 @@
                             <param id="0" name="Seconds">1</param>
                         </action>
                         <action id="-2" name="Go to layout" sid="2741305218881021" type="System">
-                            <param id="0" name="Layout">Level</param>
+                            <param id="0" name="Layout">protoLevel</param>
                         </action>
                     </actions>
                 </event-block>
@@ -194,7 +194,7 @@
                     <param id="0" name="Seconds">1</param>
                 </action>
                 <action id="-2" name="Go to layout" sid="5968143143792305" type="System">
-                    <param id="0" name="Layout">Level</param>
+                    <param id="0" name="Layout">protoLevel</param>
                 </action>
             </actions>
         </event-block>
@@ -230,7 +230,7 @@
                     <param id="0" name="Seconds">1</param>
                 </action>
                 <action id="-2" name="Go to layout" sid="233422960740022" type="System">
-                    <param id="0" name="Layout">Level</param>
+                    <param id="0" name="Layout">protoLevel</param>
                 </action>
             </actions>
         </event-block>
