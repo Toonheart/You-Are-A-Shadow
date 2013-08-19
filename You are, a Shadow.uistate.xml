@@ -11,9 +11,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout>protoLevel2</layout>
-        <layout active="1">LevelsScreen</layout>
+        <layout>LevelsScreen</layout>
         <layout>GraphicStore</layout>
-        <event-sheet>Level_Generator</event-sheet>
+        <event-sheet active="1">Level_Generator</event-sheet>
         <event-sheet>Debug</event-sheet>
         <event-sheet>AllGlobalVariables</event-sheet>
         <event-sheet>LevelsScreen_Events</event-sheet>
