@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>LevelsScreen_Events</name>
+    <events>
+        <comment>TESTING - Change levelnumber to change stages</comment>
+        <event-block sid="4716055702084036">
+            <conditions>
+                <condition id="1" name="On any key pressed" sid="9091175621079813" type="Keyboard" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="7126925938043669" type="System">
+                    <param id="0" name="Variable">LevelNumber</param>
+                    <param id="1" name="Value">Keyboard.StringFromKeyCode(Keyboard.LastKeyCode)</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="8169993589463551" type="System">
+                    <param id="0" name="Layout">protoLevel2</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

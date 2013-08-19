@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Enemy_CrocWaveGenerator</name>
+    <events>
+        <event-group description="algorithm to spawn enemy waves" sid="6740860359705543" title="Spawn Waves Algorithm">
+            <sub-events>
+                <comment>Random changing spawn sides</comment>
+                <event-block sid="3170226008444687">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="2693983538797837" type="System">
+                            <param id="0" name="Interval (seconds)">30</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="5448890408649847" type="System">
+                            <param id="0" name="Variable">SpawnSide</param>
+                            <param id="1" name="Value">&quot;Left&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1336902607904061">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="1917200663089435" type="System">
+                            <param id="0" name="Interval (seconds)">61</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="4802112985788834" type="System">
+                            <param id="0" name="Variable">SpawnSide</param>
+                            <param id="1" name="Value">&quot;Right&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9879706722290459">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="6399025322440502" type="System">
+                            <param id="0" name="Interval (seconds)">92</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="3546557215812068" type="System">
+                            <param id="0" name="Variable">SpawnSide</param>
+                            <param id="1" name="Value">&quot;Both&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Every 5 Secs, for every walkpath, if enemies is zero... based on wavetype... Spawn enemies</comment>
+                <comment>New with RandomSeed</comment>
+                <event-block sid="5994562544161909">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="4000647807702902" type="System">
+                            <param id="0" name="Interval (seconds)">2</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="4173674427868673" type="System">
+                            <param id="0" name="First value">WalkPath.Count</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="299497228720274" type="System">
+                            <param id="0" name="First value">crocodile.Count</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                        <condition disabled="1" id="-14" name="Compare variable" sid="5073540997363277" type="System">
+                            <param id="0" name="Variable">WaveStatus</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="2022100187385666" type="System">
+                            <param id="0" name="First value">WaveIndexY</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="3323863217973635">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="398189206698804" type="System">
+                                    <param id="0" name="Variable">WaveNumber</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block collapsed="1" sid="6816315084647494">
+                                    <conditions>
+                                        <condition id="-24" name="For Each (ordered)" sid="3367734932283717" type="System">
+                                            <param id="0" name="Object">WalkPath</param>
+                                            <param id="1" name="Expression">0</param>
+                                            <param id="2" name="Order">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="3843990079942173">
+                                            <conditions>
+                                                <condition id="-10" name="For" sid="714732749873999" type="System">
+                                                    <param id="0" name="Name">&quot;EnemyPerSetIndex&quot;</param>
+                                                    <param id="1" name="Start index">1</param>
+                                                    <param id="2" name="End index">EnemiesPerSet</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="2752208820051197">
+                                                    <conditions>
+                                                        <condition id="-14" name="Compare variable" sid="9875086113891964" type="System">
+                                                            <param id="0" name="Variable">SpawnSide</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">&quot;Left&quot;</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-3" name="Create object" sid="5435216667491193" type="System">
+                                                            <param id="0" name="Object to create">crocodile</param>
+                                                            <param id="1" name="Layer">&quot;Objects&quot;</param>
+                                                            <param id="2" name="X">-200-(EnemiesPerSetGap*loopindex(&quot;EnemyPerSetIndex&quot;))</param>
+                                                            <param id="3" name="Y">WalkPath(WalkPath.IID).Y</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="5691296859182826">
+                                                    <conditions>
+                                                        <condition id="-14" name="Compare variable" sid="4940707355484777" type="System">
+                                                            <param id="0" name="Variable">SpawnSide</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">&quot;Right&quot;</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-3" name="Create object" sid="291267496771953" type="System">
+                                                            <param id="0" name="Object to create">crocodile</param>
+                                                            <param id="1" name="Layer">&quot;Objects&quot;</param>
+                                                            <param id="2" name="X">LayoutWidth+(EnemiesPerSetGap*loopindex(&quot;EnemyPerSetIndex&quot;))</param>
+                                                            <param id="3" name="Y">WalkPath(WalkPath.IID).Y</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="886159398393599">
+                                                    <conditions>
+                                                        <condition id="-14" name="Compare variable" sid="2418796485222726" type="System">
+                                                            <param id="0" name="Variable">SpawnSide</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">&quot;Both&quot;</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-3" name="Create object" sid="9668583323983735" type="System">
+                                                            <param id="0" name="Object to create">crocodile</param>
+                                                            <param id="1" name="Layer">&quot;Objects&quot;</param>
+                                                            <param id="2" name="X">-200-(EnemiesPerSetGap*loopindex(&quot;EnemyPerSetIndex&quot;))</param>
+                                                            <param id="3" name="Y">WalkPath(WalkPath.IID).Y</param>
+                                                        </action>
+                                                        <action id="-3" name="Create object" sid="6547546433172533" type="System">
+                                                            <param id="0" name="Object to create">crocodile</param>
+                                                            <param id="1" name="Layer">&quot;Objects&quot;</param>
+                                                            <param id="2" name="X">LayoutWidth+(EnemiesPerSetGap*loopindex(&quot;EnemyPerSetIndex&quot;))</param>
+                                                            <param id="3" name="Y">WalkPath(WalkPath.IID).Y</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="5909861387321984">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="4240376755064805" type="System">
+                                    <param id="0" name="First value">loopindex(&quot;EnemyPerSetIndex&quot;)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">EnemiesPerSet</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="2622021343984722" type="System">
+                                    <param id="0" name="Variable">EnemiesPerSet</param>
+                                    <param id="1" name="Value">floor(random(Min_Croc_Cnt,Max_Croc_Cnt))</param>
+                                </action>
+                                <action id="-11" name="Subtract from" sid="645481317084268" type="System">
+                                    <param id="0" name="Variable">WaveIndexY</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group collapsed="1" description="How each type of enemies move" sid="677269178247023" title="Enemy Movement Pattern">
+            <sub-events>
+                <comment>If Croc is designated to move left or right then make them move that way</comment>
+                <event-block sid="1103601538450148">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="75242541592582" type="crocodile">
+                            <param id="0" name="Instance variable">MoveDirection</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Right&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="8538680567242753" type="crocodile">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4423039834506644">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="8792307481645226" type="crocodile">
+                            <param id="0" name="Instance variable">MoveDirection</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Left&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="5573524073581278" type="crocodile">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>If the opposite crocs reach opposite direction then destroy</comment>
+                <event-block sid="3247209059337339">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="9653472194572884" type="crocodile">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">0</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="4846284966932675" type="crocodile">
+                            <param id="0" name="Instance variable">MoveDirection</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Left&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="9093162049140926" type="crocodile" />
+                    </actions>
+                </event-block>
+                <event-block sid="9888483612779714">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="2019697239916914" type="crocodile">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">LayoutWidth</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="3499515796405886" type="crocodile">
+                            <param id="0" name="Instance variable">MoveDirection</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Right&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="4049026607715049" type="crocodile" />
+                    </actions>
+                </event-block>
+                <comment>Based on the place of creation, designate a left or right movement</comment>
+                <event-block sid="5972618999623684">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="5928717645533573" type="crocodile" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="6042044565188743">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="7851465545798673" type="crocodile">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="X co-ordinate">0</param>
+                                </condition>
+                                <condition id="-4" name="Trigger once while true" sid="7981649567355762" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="9477865984305583" type="crocodile">
+                                    <param id="0" name="Instance variable">MoveDirection</param>
+                                    <param id="1" name="Value">&quot;Right&quot;</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="4049281989605604" type="crocodile">
+                                    <param id="0" name="Animation">&quot;WalkRight&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="6131519874621069">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="5313833095602716" type="crocodile">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="X co-ordinate">LayoutWidth</param>
+                                </condition>
+                                <condition id="-4" name="Trigger once while true" sid="6284069700559091" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="3924188348732657" type="crocodile">
+                                    <param id="0" name="Instance variable">MoveDirection</param>
+                                    <param id="1" name="Value">&quot;Left&quot;</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="4155330032016269" type="crocodile">
+                                    <param id="0" name="Animation">&quot;WalkLeft&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

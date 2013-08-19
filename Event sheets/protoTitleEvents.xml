@@ -102,9 +102,6 @@
                         <action id="-16" name="Wait" sid="9789726147850141" type="System">
                             <param id="0" name="Seconds">1</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="9674722026737161" type="System">
-                            <param id="0" name="Layout">protoLevel</param>
-                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -152,9 +149,6 @@
                         <action id="-16" name="Wait" sid="2943080481386281" type="System">
                             <param id="0" name="Seconds">1</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="2741305218881021" type="System">
-                            <param id="0" name="Layout">protoLevel</param>
-                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -193,9 +187,6 @@
                 <action id="-16" name="Wait" sid="5617968060012615" type="System">
                     <param id="0" name="Seconds">1</param>
                 </action>
-                <action id="-2" name="Go to layout" sid="5968143143792305" type="System">
-                    <param id="0" name="Layout">protoLevel</param>
-                </action>
             </actions>
         </event-block>
         <event-block disabled="1" sid="9016547507389274">
@@ -228,9 +219,6 @@
                 </action>
                 <action id="-16" name="Wait" sid="3226586996705697" type="System">
                     <param id="0" name="Seconds">1</param>
-                </action>
-                <action id="-2" name="Go to layout" sid="233422960740022" type="System">
-                    <param id="0" name="Layout">protoLevel</param>
                 </action>
             </actions>
         </event-block>

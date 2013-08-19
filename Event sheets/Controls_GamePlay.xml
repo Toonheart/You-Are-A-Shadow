@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Controls_GamePlay</name>
+    <events>
+        <event-group description="fast hits calculation for combo" sid="6771181160343308" title="Combo Hits">
+            <sub-events>
+                <comment>Use touch_count and keep resetting it unless superspeed tapping is done</comment>
+                <event-block sid="7992226623546275">
+                    <conditions>
+                        <condition id="1" name="On any touch end" sid="9685684565702956" type="Touch" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="9948770466700078" type="System">
+                            <param id="0" name="Variable">touch_count</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5904446859811316">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="9022975670660393" type="System">
+                            <param id="0" name="Interval (seconds)">0.5</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="9126956913679391" type="System">
+                            <param id="0" name="Variable">touch_count</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="3707857757934915" type="System">
+                            <param id="0" name="Variable">touch_count</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

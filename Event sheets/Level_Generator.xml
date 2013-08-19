@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Level_Generator</name>
+    <events>
+        <event-group description="Random generated setting based on level" sid="7103241626117123" title="Stage Set with Units to Save">
+            <sub-events>
+                <comment>Generate Levels with units depending on level being played.</comment>
+                <event-block sid="9738367818368086">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="7242054670409615" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="2442262752479347">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="8975918852190201" type="System">
+                                    <param id="0" name="Variable">LevelNumber</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="6556234494609873" type="System">
+                                    <param id="0" name="Object to create">WalkPath</param>
+                                    <param id="1" name="Layer">&quot;Ground&quot;</param>
+                                    <param id="2" name="X">LayoutWidth/random(1.5,3)</param>
+                                    <param id="3" name="Y">LayoutHeight/2</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="4752944306464094" type="System">
+                                    <param id="0" name="Seconds">1.0</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="889361368776081" type="System">
+                                    <param id="0" name="Object to create">blackkitten</param>
+                                    <param id="1" name="Layer">&quot;Objects&quot;</param>
+                                    <param id="2" name="X">WalkPath(1).X</param>
+                                    <param id="3" name="Y">WalkPath(1).Y</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="968255644901491" type="System">
+                                    <param id="0" name="Variable">Min_Croc_Cnt</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="4508908065743065" type="System">
+                                    <param id="0" name="Variable">Max_Croc_Cnt</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="2894428648643819">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="4378826357256391" type="System">
+                                    <param id="0" name="Variable">LevelNumber</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="7841483597650494" type="System">
+                                    <param id="0" name="Object to create">WalkPath</param>
+                                    <param id="1" name="Layer">&quot;Ground&quot;</param>
+                                    <param id="2" name="X">LayoutWidth/random(1.2,2)</param>
+                                    <param id="3" name="Y">LayoutHeight/1.5</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="9579111302295456" type="System">
+                                    <param id="0" name="Object to create">WalkPath</param>
+                                    <param id="1" name="Layer">&quot;Ground&quot;</param>
+                                    <param id="2" name="X">LayoutWidth/random(2.5,3.2)</param>
+                                    <param id="3" name="Y">LayoutHeight/1.5</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="371495283674462" type="System">
+                                    <param id="0" name="Seconds">1.0</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="7254654735794424" type="System">
+                                    <param id="0" name="Object to create">HAPPYfriend</param>
+                                    <param id="1" name="Layer">&quot;Objects&quot;</param>
+                                    <param id="2" name="X">WalkPath(0).X</param>
+                                    <param id="3" name="Y">WalkPath(0).Y</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="8025373831969207" type="System">
+                                    <param id="0" name="Object to create">blackkitten</param>
+                                    <param id="1" name="Layer">&quot;Objects&quot;</param>
+                                    <param id="2" name="X">WalkPath(1).X</param>
+                                    <param id="3" name="Y">WalkPath(1).Y</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="7497565136885933" type="System">
+                                    <param id="0" name="Variable">Min_Croc_Cnt</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="4309624552355477" type="System">
+                                    <param id="0" name="Variable">Max_Croc_Cnt</param>
+                                    <param id="1" name="Value">4</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="8706139749469893">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="7727511534000009" type="System">
+                                    <param id="0" name="Variable">LevelNumber</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="2741652306878381" type="System">
+                                    <param id="0" name="Object to create">WalkPath</param>
+                                    <param id="1" name="Layer">&quot;Ground&quot;</param>
+                                    <param id="2" name="X">LayoutWidth/random(1.2,2)</param>
+                                    <param id="3" name="Y">LayoutHeight/1.5</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="3348964419789049" type="System">
+                                    <param id="0" name="Object to create">WalkPath</param>
+                                    <param id="1" name="Layer">&quot;Ground&quot;</param>
+                                    <param id="2" name="X">LayoutWidth/random(2.5,3.2)</param>
+                                    <param id="3" name="Y">LayoutHeight/1.5</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="4261926887544414" type="System">
+                                    <param id="0" name="Object to create">WalkPath</param>
+                                    <param id="1" name="Layer">&quot;Ground&quot;</param>
+                                    <param id="2" name="X">LayoutWidth/random(1.5,3)</param>
+                                    <param id="3" name="Y">LayoutHeight/3</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="2033628238413656" type="System">
+                                    <param id="0" name="Seconds">1.0</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="9493075400749884" type="System">
+                                    <param id="0" name="Object to create">blackkitten</param>
+                                    <param id="1" name="Layer">&quot;Objects&quot;</param>
+                                    <param id="2" name="X">WalkPath(0).X</param>
+                                    <param id="3" name="Y">WalkPath(0).Y</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="5585989994019639" type="System">
+                                    <param id="0" name="Object to create">HAPPYfriend</param>
+                                    <param id="1" name="Layer">&quot;Objects&quot;</param>
+                                    <param id="2" name="X">WalkPath(1).X</param>
+                                    <param id="3" name="Y">WalkPath(1).Y</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="8087913607674156" type="System">
+                                    <param id="0" name="Object to create">oldlady</param>
+                                    <param id="1" name="Layer">&quot;Objects&quot;</param>
+                                    <param id="2" name="X">WalkPath(2).X</param>
+                                    <param id="3" name="Y">WalkPath(2).Y</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="2062911526110501" type="System">
+                                    <param id="0" name="Variable">Min_Croc_Cnt</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="5468732842184966" type="System">
+                                    <param id="0" name="Variable">Max_Croc_Cnt</param>
+                                    <param id="1" name="Value">4</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="9080991286458462">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="3964090674968579" type="System">
+                                    <param id="0" name="Variable">LevelNumber</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="8294520394567558" type="System">
+                                    <param id="0" name="Object to create">WalkPath</param>
+                                    <param id="1" name="Layer">&quot;Ground&quot;</param>
+                                    <param id="2" name="X">LayoutWidth/random(1.2,2)</param>
+                                    <param id="3" name="Y">LayoutHeight/1.5</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="3825600060149894" type="System">
+                                    <param id="0" name="Object to create">WalkPath</param>
+                                    <param id="1" name="Layer">&quot;Ground&quot;</param>
+                                    <param id="2" name="X">LayoutWidth/random(2.5,3.2)</param>
+                                    <param id="3" name="Y">LayoutHeight/1.5</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="3607616962551153" type="System">
+                                    <param id="0" name="Object to create">WalkPath</param>
+                                    <param id="1" name="Layer">&quot;Ground&quot;</param>
+                                    <param id="2" name="X">LayoutWidth/random(1.2,2)</param>
+                                    <param id="3" name="Y">LayoutHeight/3</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="5944107115073505" type="System">
+                                    <param id="0" name="Object to create">WalkPath</param>
+                                    <param id="1" name="Layer">&quot;Ground&quot;</param>
+                                    <param id="2" name="X">LayoutWidth/random(2.5,3.2)</param>
+                                    <param id="3" name="Y">LayoutHeight/3</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="1336701623384095" type="System">
+                                    <param id="0" name="Seconds">1.0</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="7167393770178299" type="System">
+                                    <param id="0" name="Object to create">oldlady</param>
+                                    <param id="1" name="Layer">&quot;Objects&quot;</param>
+                                    <param id="2" name="X">WalkPath(0).X</param>
+                                    <param id="3" name="Y">WalkPath(0).Y</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="1499895473808161" type="System">
+                                    <param id="0" name="Object to create">HAPPYfriend</param>
+                                    <param id="1" name="Layer">&quot;Objects&quot;</param>
+                                    <param id="2" name="X">WalkPath(1).X</param>
+                                    <param id="3" name="Y">WalkPath(1).Y</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="7879114379688027" type="System">
+                                    <param id="0" name="Object to create">blackkitten</param>
+                                    <param id="1" name="Layer">&quot;Objects&quot;</param>
+                                    <param id="2" name="X">WalkPath(2).X</param>
+                                    <param id="3" name="Y">WalkPath(2).Y</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="1940351381822674" type="System">
+                                    <param id="0" name="Object to create">hotChick</param>
+                                    <param id="1" name="Layer">&quot;Objects&quot;</param>
+                                    <param id="2" name="X">WalkPath(3).X</param>
+                                    <param id="3" name="Y">WalkPath(3).Y</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="8099887304807885" type="System">
+                                    <param id="0" name="Variable">Min_Croc_Cnt</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="2357420472411735" type="System">
+                                    <param id="0" name="Variable">Max_Croc_Cnt</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="555997725861614">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="4949714950017634" type="System">
+                                    <param id="0" name="Variable">LevelNumber</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="9944564702554633" type="System">
+                                    <param id="0" name="Object to create">WalkPath</param>
+                                    <param id="1" name="Layer">&quot;Ground&quot;</param>
+                                    <param id="2" name="X">LayoutWidth/random(1.2,2)</param>
+                                    <param id="3" name="Y">LayoutHeight/1.1</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="7198014173269825" type="System">
+                                    <param id="0" name="Object to create">WalkPath</param>
+                                    <param id="1" name="Layer">&quot;Ground&quot;</param>
+                                    <param id="2" name="X">LayoutWidth/random(2.5,3.2)</param>
+                                    <param id="3" name="Y">LayoutHeight/1.1</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="356459051925713" type="System">
+                                    <param id="0" name="Object to create">WalkPath</param>
+                                    <param id="1" name="Layer">&quot;Ground&quot;</param>
+                                    <param id="2" name="X">LayoutWidth/random(1.2,2)</param>
+                                    <param id="3" name="Y">LayoutHeight/1.6</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="1135051081379615" type="System">
+                                    <param id="0" name="Object to create">WalkPath</param>
+                                    <param id="1" name="Layer">&quot;Ground&quot;</param>
+                                    <param id="2" name="X">LayoutWidth/random(2.5,3.2)</param>
+                                    <param id="3" name="Y">LayoutHeight/1.6</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="4983656538600203" type="System">
+                                    <param id="0" name="Object to create">WalkPath</param>
+                                    <param id="1" name="Layer">&quot;Ground&quot;</param>
+                                    <param id="2" name="X">LayoutWidth/random(1.2,2)</param>
+                                    <param id="3" name="Y">LayoutHeight/3</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="6220603619559429" type="System">
+                                    <param id="0" name="Object to create">WalkPath</param>
+                                    <param id="1" name="Layer">&quot;Ground&quot;</param>
+                                    <param id="2" name="X">LayoutWidth/random(2.5,3.2)</param>
+                                    <param id="3" name="Y">LayoutHeight/3</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="4481496904886631" type="System">
+                                    <param id="0" name="Seconds">1.0</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="7117291445528294" type="System">
+                                    <param id="0" name="Object to create">oldlady</param>
+                                    <param id="1" name="Layer">&quot;Objects&quot;</param>
+                                    <param id="2" name="X">WalkPath(0).X</param>
+                                    <param id="3" name="Y">WalkPath(0).Y</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="9446864190591261" type="System">
+                                    <param id="0" name="Object to create">HAPPYfriend</param>
+                                    <param id="1" name="Layer">&quot;Objects&quot;</param>
+                                    <param id="2" name="X">WalkPath(1).X</param>
+                                    <param id="3" name="Y">WalkPath(1).Y</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="8741144842004914" type="System">
+                                    <param id="0" name="Object to create">blackkitten</param>
+                                    <param id="1" name="Layer">&quot;Objects&quot;</param>
+                                    <param id="2" name="X">WalkPath(2).X</param>
+                                    <param id="3" name="Y">WalkPath(2).Y</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="7127665451571893" type="System">
+                                    <param id="0" name="Object to create">hotChick</param>
+                                    <param id="1" name="Layer">&quot;Objects&quot;</param>
+                                    <param id="2" name="X">WalkPath(3).X</param>
+                                    <param id="3" name="Y">WalkPath(3).Y</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="1840987175894969" type="System">
+                                    <param id="0" name="Object to create">fastcar</param>
+                                    <param id="1" name="Layer">&quot;Objects&quot;</param>
+                                    <param id="2" name="X">WalkPath(4).X</param>
+                                    <param id="3" name="Y">WalkPath(4).Y</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="5594453204970349" type="System">
+                                    <param id="0" name="Variable">Min_Croc_Cnt</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="7736622182935865" type="System">
+                                    <param id="0" name="Variable">Max_Croc_Cnt</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="5616345603448744">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="6787044744730081" type="System">
+                                    <param id="0" name="Variable">LevelNumber</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">6</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="3241939297980021" type="System">
+                                    <param id="0" name="Object to create">WalkPath</param>
+                                    <param id="1" name="Layer">&quot;Ground&quot;</param>
+                                    <param id="2" name="X">LayoutWidth/random(1.2,2)</param>
+                                    <param id="3" name="Y">LayoutHeight/1.1</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="5741329726800956" type="System">
+                                    <param id="0" name="Object to create">WalkPath</param>
+                                    <param id="1" name="Layer">&quot;Ground&quot;</param>
+                                    <param id="2" name="X">LayoutWidth/random(2.5,3.2)</param>
+                                    <param id="3" name="Y">LayoutHeight/1.1</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="2409731833986194" type="System">
+                                    <param id="0" name="Object to create">WalkPath</param>
+                                    <param id="1" name="Layer">&quot;Ground&quot;</param>
+                                    <param id="2" name="X">LayoutWidth/random(1.2,2)</param>
+                                    <param id="3" name="Y">LayoutHeight/1.6</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="1102274978092707" type="System">
+                                    <param id="0" name="Object to create">WalkPath</param>
+                                    <param id="1" name="Layer">&quot;Ground&quot;</param>
+                                    <param id="2" name="X">LayoutWidth/random(2.5,3.2)</param>
+                                    <param id="3" name="Y">LayoutHeight/1.6</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="4024258081163653" type="System">
+                                    <param id="0" name="Object to create">WalkPath</param>
+                                    <param id="1" name="Layer">&quot;Ground&quot;</param>
+                                    <param id="2" name="X">LayoutWidth/random(1.2,2)</param>
+                                    <param id="3" name="Y">LayoutHeight/3</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="3722658473069439" type="System">
+                                    <param id="0" name="Object to create">WalkPath</param>
+                                    <param id="1" name="Layer">&quot;Ground&quot;</param>
+                                    <param id="2" name="X">LayoutWidth/random(2.5,3.2)</param>
+                                    <param id="3" name="Y">LayoutHeight/3</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="3559636227645673" type="System">
+                                    <param id="0" name="Seconds">1.0</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="9613356135210464" type="System">
+                                    <param id="0" name="Object to create">oldlady</param>
+                                    <param id="1" name="Layer">&quot;Objects&quot;</param>
+                                    <param id="2" name="X">WalkPath(0).X</param>
+                                    <param id="3" name="Y">WalkPath(0).Y</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="9540701611314554" type="System">
+                                    <param id="0" name="Object to create">HAPPYfriend</param>
+                                    <param id="1" name="Layer">&quot;Objects&quot;</param>
+                                    <param id="2" name="X">WalkPath(1).X</param>
+                                    <param id="3" name="Y">WalkPath(1).Y</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="1148003234101234" type="System">
+                                    <param id="0" name="Object to create">blackkitten</param>
+                                    <param id="1" name="Layer">&quot;Objects&quot;</param>
+                                    <param id="2" name="X">WalkPath(2).X</param>
+                                    <param id="3" name="Y">WalkPath(2).Y</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="8676216034211345" type="System">
+                                    <param id="0" name="Object to create">hotChick</param>
+                                    <param id="1" name="Layer">&quot;Objects&quot;</param>
+                                    <param id="2" name="X">WalkPath(3).X</param>
+                                    <param id="3" name="Y">WalkPath(3).Y</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="8918103090545092" type="System">
+                                    <param id="0" name="Object to create">fastcar</param>
+                                    <param id="1" name="Layer">&quot;Objects&quot;</param>
+                                    <param id="2" name="X">WalkPath(4).X</param>
+                                    <param id="3" name="Y">WalkPath(4).Y</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="2198983608120194" type="System">
+                                    <param id="0" name="Object to create">girlFriend</param>
+                                    <param id="1" name="Layer">&quot;Objects&quot;</param>
+                                    <param id="2" name="X">WalkPath(5).X</param>
+                                    <param id="3" name="Y">WalkPath(5).Y</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="134476950650417" type="System">
+                                    <param id="0" name="Variable">Min_Croc_Cnt</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="9622074181413275" type="System">
+                                    <param id="0" name="Variable">Max_Croc_Cnt</param>
+                                    <param id="1" name="Value">6</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

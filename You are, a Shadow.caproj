@@ -10,15 +10,16 @@
     <unique-id>1ahnhyia3yiq5</unique-id>
     <saved-with-version>13200</saved-with-version>
     <used-plugins>
-        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
-        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
-        <plugin author="Scirra" id="Text" version="1">Text</plugin>
-        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
-        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Facebook" version="1">Facebook</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Rex.Rainbow" id="Rex_Pause" version="1">Pause</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
@@ -177,11 +178,6 @@
         </object-type>
         <object-type name="grassFAR" sid="17">
             <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="60">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="18" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.504587">
@@ -244,6 +240,9 @@
         </object-type>
         <object-type name="beer" sid="24">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="number of hits this object can take" name="hitpoint" sid="1808664697930153" type="number" />
+            </instance-variables>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="25" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.500907">
@@ -262,14 +261,20 @@
         </object-type>
         <object-type name="blackkitten" sid="26">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="number of hits this can take" name="hitcount" sid="2292665511709979" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Flash" sid="9223968237447966">
                     <behavior id="Flash" />
                 </behavior-type>
+                <behavior-type name="Solid" sid="1323177110170658">
+                    <behavior id="solid" />
+                </behavior-type>
             </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="27" speed="5">
-                    <frame duration="1" hotspotX="0.501085" hotspotY="0.5">
+                    <frame duration="1" hotspotX="0.40564" hotspotY="0.988889">
                         <collision-poly>
                             <point x="0.0954447" y="0.0814815" />
                             <point x="0.498915" y="0.140741" />
@@ -304,6 +309,9 @@
         </object-type>
         <object-type name="fastcar" sid="30">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="number of hits this object can take" name="hitpoint" sid="137798564027087" type="number" />
+            </instance-variables>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="31" speed="5">
                     <frame duration="1" hotspotX="0.500503" hotspotY="0.5">
@@ -323,14 +331,20 @@
         </object-type>
         <object-type name="HAPPYfriend" sid="32">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="number of hits this can take" name="hitcount" sid="8431536478597252" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Flash" sid="2506095174112523">
                     <behavior id="Flash" />
                 </behavior-type>
+                <behavior-type name="Solid" sid="1078689114300165">
+                    <behavior id="solid" />
+                </behavior-type>
             </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="33" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.501241">
+                    <frame duration="1" hotspotX="0.34127" hotspotY="0.942928">
                         <collision-poly>
                             <point x="0.0357143" y="0.0223325" />
                             <point x="0.5" y="0.00248139" />
@@ -368,7 +382,7 @@
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="37" speed="5">
-                    <frame duration="1" hotspotX="0.50211" hotspotY="0.501031">
+                    <frame duration="1" hotspotX="0.485232" hotspotY="0.979381">
                         <collision-poly>
                             <point x="0.0801688" y="0.0391753" />
                             <point x="0.49789" y="0" />
@@ -385,6 +399,9 @@
         </object-type>
         <object-type name="gold" sid="38">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="number of hits this object can take" name="hitpoint" sid="3438004771369918" type="number" />
+            </instance-variables>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="39" speed="5">
                     <frame duration="1" hotspotX="0.501305" hotspotY="0.501193">
@@ -404,9 +421,12 @@
         </object-type>
         <object-type name="oldlady" sid="40">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="number of hits this object can take" name="hitcount" sid="7942228118058533" type="number" />
+            </instance-variables>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="41" speed="5">
-                    <frame duration="1" hotspotX="0.501706" hotspotY="0.5">
+                    <frame duration="1" hotspotX="0.341297" hotspotY="0.910788">
                         <collision-poly>
                             <point x="0.204778" y="0.124481" />
                             <point x="0.498294" y="0.0746888" />
@@ -423,9 +443,12 @@
         </object-type>
         <object-type name="hotChick" sid="42">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="Number of hits this object can take" name="hitpoint" sid="8379988255510985" type="number" />
+            </instance-variables>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="43" speed="5">
-                    <frame duration="1" hotspotX="0.502463" hotspotY="0.500986">
+                    <frame duration="1" hotspotX="0.423645" hotspotY="0.952663">
                         <collision-poly>
                             <point x="0.118227" y="0.0473373" />
                             <point x="0.497537" y="0" />
@@ -460,6 +483,9 @@
         </object-type>
         <object-type name="money" sid="46">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="number of hits this object can take" name="hitpoint" sid="4802500920999808" type="number" />
+            </instance-variables>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="47" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
@@ -567,51 +593,85 @@
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable comment="hit points before destroy" name="hitpoint" sid="9079983326186028" type="number" />
-                <instance-variable comment="speed in px at which the object moves" name="MoveSpeed" sid="7460437909760566" type="number" />
+                <instance-variable comment="Move direction" name="MoveDirection" sid="1983732414557796" type="string" />
             </instance-variables>
             <behaviors>
-                <behavior-type name="Flash" sid="7210373374567472">
-                    <behavior id="Flash" />
+                <behavior-type name="8Direction" sid="3216658771706457">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="1652211852159763">
+                    <behavior id="solid" />
                 </behavior-type>
             </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="34205362824726" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                    <frame duration="1" hotspotX="0.394118" hotspotY="0.849057">
                         <collision-poly>
-                            <point x="0.976471" y="0.5" />
-                            <point x="0.829412" y="0.726415" />
-                            <point x="0.5" y="0.839623" />
-                            <point x="0.158824" y="0.745283" />
-                            <point x="0" y="0.5" />
-                            <point x="0.0529412" y="0.0849057" />
-                            <point x="0.5" y="0.45283" />
-                            <point x="0.841176" y="0.254717" />
+                            <point x="1" y="0.490566" />
+                            <point x="0.1" y="0" />
+                            <point x="0" y="0.825472" />
+                            <point x="0.782353" y="0.933962" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="WalkLeft" pingpong="0" repeatcount="1" repeatto="0" sid="2814627348249101" speed="5">
+                    <frame duration="1" hotspotX="0.605882" hotspotY="0.849057">
+                        <collision-poly>
+                            <point x="0.217647" y="0.933962" />
+                            <point x="1" y="0.825472" />
+                            <point x="0.9" y="0" />
+                            <point x="0" y="0.490566" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="WalkRight" pingpong="0" repeatcount="1" repeatto="0" sid="5382337614961294" speed="5">
+                    <frame duration="1" hotspotX="0.394118" hotspotY="0.849057">
+                        <collision-poly>
+                            <point x="1" y="0.490566" />
+                            <point x="0.1" y="0" />
+                            <point x="0" y="0.825472" />
+                            <point x="0.782353" y="0.933962" />
                         </collision-poly>
                     </frame>
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="WalkPath" sid="2841498611095495">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5140589813990566" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Pause" sid="973717500161353">
+            <plugin id="Rex_Pause" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
-        <layout>protoLevel.xml</layout>
         <layout>protoTitle.xml</layout>
         <layout>protoLevel2.xml</layout>
         <layout>GraphicStore.xml</layout>
+        <layout>LevelsScreen.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
         <event-sheet>protoLevel_Events.xml</event-sheet>
-        <event-sheet>LevelGenerator.xml</event-sheet>
+        <event-sheet>protoLevelGenerator.xml</event-sheet>
         <event-sheet>protoUserInputs.xml</event-sheet>
         <event-sheet>protoCollisions.xml</event-sheet>
         <event-sheet>Fades.xml</event-sheet>
         <event-sheet>protoTitleEvents.xml</event-sheet>
         <event-sheet>protoLevel2_Events.xml</event-sheet>
-        <event-sheet>GameplayGenerator.xml</event-sheet>
+        <event-sheet>Level_Generator.xml</event-sheet>
         <event-sheet>Debug.xml</event-sheet>
         <event-sheet>Collisions.xml</event-sheet>
-        <event-sheet>UserControls.xml</event-sheet>
+        <event-sheet>Controls_GamePlay.xml</event-sheet>
         <event-sheet>AllGlobalVariables.xml</event-sheet>
+        <event-sheet>Maintenance.xml</event-sheet>
+        <event-sheet>Controls_Interface.xml</event-sheet>
+        <event-sheet>Enemy_CrocWaveGenerator.xml</event-sheet>
+        <event-sheet>LevelsScreen_Events.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="31" />
@@ -642,6 +702,7 @@
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
+        <global-instance type="Pause" uid="79" />
     </global-instances>
     <sounds-folder expanded="1">
         <file name="Pickup_Coin.m4a" />

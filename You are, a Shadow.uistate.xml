@@ -11,11 +11,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout>protoLevel2</layout>
+        <layout active="1">LevelsScreen</layout>
         <layout>GraphicStore</layout>
-        <event-sheet>protoLevel2_Events</event-sheet>
-        <event-sheet active="1">GameplayGenerator</event-sheet>
+        <event-sheet>Level_Generator</event-sheet>
         <event-sheet>Debug</event-sheet>
-        <event-sheet>UserControls</event-sheet>
+        <event-sheet>AllGlobalVariables</event-sheet>
+        <event-sheet>LevelsScreen_Events</event-sheet>
+        <event-sheet>Enemy_CrocWaveGenerator</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />

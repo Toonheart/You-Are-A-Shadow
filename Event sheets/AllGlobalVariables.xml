@@ -3,6 +3,16 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>AllGlobalVariables</name>
     <events>
+        <variable comment="Min number of crocs per stage. Default 1 gives floor seed 1" constant="0" name="Min_Croc_Cnt" sid="3784856155984627" static="0" type="number">1</variable>
+        <variable comment="Min number of crocs per stage. Default 3 gives floor of 2" constant="0" name="Max_Croc_Cnt" sid="2616235825874343" static="0" type="number">3</variable>
+        <variable comment="Y index of array which wave is following" constant="0" name="WaveIndexY" sid="5629563548182795" static="0" type="number">6</variable>
+        <variable comment="which side to spawn" constant="0" name="SpawnSide" sid="5530321536007167" static="0" type="text">Both</variable>
+        <variable comment="gap between each enemy" constant="0" name="EnemiesPerSetGap" sid="5346240296398906" static="0" type="number">200</variable>
+        <variable comment="Number of enemies to spawn" constant="0" name="EnemiesPerSet" sid="3366171821353818" static="0" type="number">1</variable>
+        <variable comment="Status of Wave, 0 is not running, 1 is running" constant="0" name="WaveStatus" sid="7992672290967508" static="0" type="number">0</variable>
+        <variable comment="Type of Enemy Wave. Higher the number, Tougher the Wave" constant="0" name="WaveNumber" sid="613153643949006" static="0" type="number">1</variable>
+        <variable comment="Randomly changing walk path number" constant="0" name="WalkPathNumber" sid="4310691306620718" static="0" type="number">0</variable>
         <variable comment="Counts the touch and gets resetted every half second to detect double touch for Jump." constant="0" name="touch_count" sid="5583137435795454" static="0" type="number">0</variable>
+        <variable comment="LevelNumbers" constant="0" name="LevelNumber" sid="4833361119691677" static="0" type="number">1</variable>
     </events>
 </c2eventsheet>

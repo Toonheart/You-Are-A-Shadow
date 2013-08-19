@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Controls_Interface</name>
+    <events>
+        <event-group description="interfaces like menus and pauses" sid="6747741429261856" title="Interface Controls">
+            <sub-events>
+                <event-block sid="2164697196736397">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="5788577828068206" type="Keyboard">
+                            <param id="0" name="Key">80 (P)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Toggle pause" sid="6980826252008495" type="Pause" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

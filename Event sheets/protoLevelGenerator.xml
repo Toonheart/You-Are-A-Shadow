@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>LevelGenerator</name>
+    <name>protoLevelGenerator</name>
     <events>
         <event-group collapsed="1" description="" sid="85" title="Environment">
             <sub-events>
@@ -109,9 +109,6 @@
                 <action id="-9" name="Set value" sid="637" type="System">
                     <param id="0" name="Variable">LevelNumber</param>
                     <param id="1" name="Value">1</param>
-                </action>
-                <action id="-2" name="Go to layout" sid="640" type="System">
-                    <param id="0" name="Layout">protoLevel</param>
                 </action>
             </actions>
         </event-block>

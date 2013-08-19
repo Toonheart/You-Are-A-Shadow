@@ -48,9 +48,6 @@
                             <param id="0" name="Variable">ScreenChange</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="429" type="System">
-                            <param id="0" name="Layout">protoLevel</param>
-                        </action>
                     </actions>
                 </event-block>
                 <event-block any="1" sid="143">
@@ -86,9 +83,6 @@
                         <action id="-9" name="Set value" sid="152" type="System">
                             <param id="0" name="Variable">ScreenChange</param>
                             <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-2" name="Go to layout" sid="430" type="System">
-                            <param id="0" name="Layout">protoLevel</param>
                         </action>
                     </actions>
                 </event-block>
@@ -139,9 +133,6 @@
                             <param id="0" name="Variable">ScreenChange</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="442" type="System">
-                            <param id="0" name="Layout">protoLevel</param>
-                        </action>
                     </actions>
                 </event-block>
                 <event-block any="1" sid="164">
@@ -177,9 +168,6 @@
                         <action id="-9" name="Set value" sid="168" type="System">
                             <param id="0" name="Variable">ScreenChange</param>
                             <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-2" name="Go to layout" sid="444" type="System">
-                            <param id="0" name="Layout">protoLevel</param>
                         </action>
                     </actions>
                 </event-block>
@@ -230,9 +218,6 @@
                             <param id="0" name="Variable">ScreenChange</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="446" type="System">
-                            <param id="0" name="Layout">protoLevel</param>
-                        </action>
                     </actions>
                 </event-block>
                 <event-block any="1" sid="180">
@@ -268,9 +253,6 @@
                         <action id="-9" name="Set value" sid="184" type="System">
                             <param id="0" name="Variable">ScreenChange</param>
                             <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-2" name="Go to layout" sid="448" type="System">
-                            <param id="0" name="Layout">protoLevel</param>
                         </action>
                     </actions>
                 </event-block>
@@ -321,9 +303,6 @@
                             <param id="0" name="Variable">ScreenChange</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="450" type="System">
-                            <param id="0" name="Layout">protoLevel</param>
-                        </action>
                     </actions>
                 </event-block>
                 <event-block any="1" sid="205">
@@ -359,9 +338,6 @@
                         <action id="-9" name="Set value" sid="209" type="System">
                             <param id="0" name="Variable">ScreenChange</param>
                             <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-2" name="Go to layout" sid="452" type="System">
-                            <param id="0" name="Layout">protoLevel</param>
                         </action>
                     </actions>
                 </event-block>
@@ -412,9 +388,6 @@
                             <param id="0" name="Variable">ScreenChange</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="454" type="System">
-                            <param id="0" name="Layout">protoLevel</param>
-                        </action>
                     </actions>
                 </event-block>
                 <event-block any="1" sid="237">
@@ -450,9 +423,6 @@
                         <action id="-9" name="Set value" sid="241" type="System">
                             <param id="0" name="Variable">ScreenChange</param>
                             <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-2" name="Go to layout" sid="456" type="System">
-                            <param id="0" name="Layout">protoLevel</param>
                         </action>
                     </actions>
                 </event-block>
@@ -503,9 +473,6 @@
                             <param id="0" name="Variable">ScreenChange</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="458" type="System">
-                            <param id="0" name="Layout">protoLevel</param>
-                        </action>
                     </actions>
                 </event-block>
                 <event-block any="1" sid="253">
@@ -541,9 +508,6 @@
                         <action id="-9" name="Set value" sid="257" type="System">
                             <param id="0" name="Variable">ScreenChange</param>
                             <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-2" name="Go to layout" sid="460" type="System">
-                            <param id="0" name="Layout">protoLevel</param>
                         </action>
                     </actions>
                 </event-block>
@@ -586,9 +550,6 @@
                             <param id="0" name="Variable">LevelNumber</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="462" type="System">
-                            <param id="0" name="Layout">protoLevel</param>
-                        </action>
                     </actions>
                 </event-block>
                 <event-block any="1" sid="269">
@@ -616,9 +577,6 @@
                         <action id="-9" name="Set value" sid="273" type="System">
                             <param id="0" name="Variable">ScreenChange</param>
                             <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-2" name="Go to layout" sid="466" type="System">
-                            <param id="0" name="Layout">protoLevel</param>
                         </action>
                     </actions>
                 </event-block>
@@ -669,9 +627,6 @@
                             <param id="0" name="Variable">ScreenChange</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="468" type="System">
-                            <param id="0" name="Layout">protoLevel</param>
-                        </action>
                     </actions>
                 </event-block>
                 <event-block any="1" sid="285">
@@ -707,9 +662,6 @@
                         <action id="-9" name="Set value" sid="289" type="System">
                             <param id="0" name="Variable">ScreenChange</param>
                             <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-2" name="Go to layout" sid="470" type="System">
-                            <param id="0" name="Layout">protoLevel</param>
                         </action>
                     </actions>
                 </event-block>
@@ -760,9 +712,6 @@
                             <param id="0" name="Variable">ScreenChange</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="472" type="System">
-                            <param id="0" name="Layout">protoLevel</param>
-                        </action>
                     </actions>
                 </event-block>
                 <event-block any="1" sid="322">
@@ -798,9 +747,6 @@
                         <action id="-9" name="Set value" sid="326" type="System">
                             <param id="0" name="Variable">ScreenChange</param>
                             <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-2" name="Go to layout" sid="474" type="System">
-                            <param id="0" name="Layout">protoLevel</param>
                         </action>
                     </actions>
                 </event-block>
@@ -847,9 +793,6 @@
                             <param id="0" name="Variable">ScreenChange</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="476" type="System">
-                            <param id="0" name="Layout">protoLevel</param>
-                        </action>
                     </actions>
                 </event-block>
                 <event-block any="1" sid="339">
@@ -881,9 +824,6 @@
                         <action id="-9" name="Set value" sid="343" type="System">
                             <param id="0" name="Variable">ScreenChange</param>
                             <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-2" name="Go to layout" sid="478" type="System">
-                            <param id="0" name="Layout">protoLevel</param>
                         </action>
                     </actions>
                 </event-block>
@@ -930,9 +870,6 @@
                             <param id="0" name="Variable">ScreenChange</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="480" type="System">
-                            <param id="0" name="Layout">protoLevel</param>
-                        </action>
                     </actions>
                 </event-block>
                 <event-block any="1" sid="354">
@@ -964,9 +901,6 @@
                         <action id="-9" name="Set value" sid="361" type="System">
                             <param id="0" name="Variable">ScreenChange</param>
                             <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-2" name="Go to layout" sid="482" type="System">
-                            <param id="0" name="Layout">protoLevel</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1013,9 +947,6 @@
                             <param id="0" name="Variable">ScreenChange</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="484" type="System">
-                            <param id="0" name="Layout">protoLevel</param>
-                        </action>
                     </actions>
                 </event-block>
                 <event-block any="1" sid="370">
@@ -1047,9 +978,6 @@
                         <action id="-9" name="Set value" sid="375" type="System">
                             <param id="0" name="Variable">ScreenChange</param>
                             <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-2" name="Go to layout" sid="486" type="System">
-                            <param id="0" name="Layout">protoLevel</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1100,9 +1028,6 @@
                             <param id="0" name="Variable">ScreenChange</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="488" type="System">
-                            <param id="0" name="Layout">protoLevel</param>
-                        </action>
                     </actions>
                 </event-block>
                 <event-block any="1" sid="384">
@@ -1134,9 +1059,6 @@
                         <action id="-9" name="Set value" sid="389" type="System">
                             <param id="0" name="Variable">ScreenChange</param>
                             <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-2" name="Go to layout" sid="490" type="System">
-                            <param id="0" name="Layout">protoLevel</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1171,9 +1093,6 @@
                             <param id="0" name="Variable">ScreenChange</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="864" type="System">
-                            <param id="0" name="Layout">protoLevel</param>
-                        </action>
                     </actions>
                 </event-block>
                 <event-block disabled="1" sid="2712647732971222">
@@ -1193,9 +1112,6 @@
                         <action id="-9" name="Set value" sid="5446425373073321" type="System">
                             <param id="0" name="Variable">ScreenChange</param>
                             <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-2" name="Go to layout" sid="8517190262815894" type="System">
-                            <param id="0" name="Layout">protoLevel</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1229,9 +1145,6 @@
                         <action id="-9" name="Set value" sid="2465962177658804" type="System">
                             <param id="0" name="Variable">ScreenChange</param>
                             <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-2" name="Go to layout" sid="335499410379702" type="System">
-                            <param id="0" name="Layout">protoLevel</param>
                         </action>
                     </actions>
                 </event-block>

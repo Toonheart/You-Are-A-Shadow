@@ -3,11 +3,10 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>protoLevel_Events</name>
     <events>
-        <include>LevelGenerator</include>
+        <include>protoLevelGenerator</include>
         <include>protoCollisions</include>
         <include>Fades</include>
         <include>protoUserInputs</include>
-        <variable comment="LevelNumbers" constant="0" name="LevelNumber" sid="52" static="0" type="number">0</variable>
         <variable comment="Level of Kindness" constant="0" name="Kindness" sid="133" static="0" type="number">0</variable>
         <variable comment="Level of Greed" constant="0" name="Greed" sid="134" static="0" type="number">0</variable>
         <variable comment="Level of Pervertness" constant="0" name="Perversion" sid="135" static="0" type="number">0</variable>

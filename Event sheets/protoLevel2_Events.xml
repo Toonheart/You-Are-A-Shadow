@@ -3,9 +3,12 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>protoLevel2_Events</name>
     <events>
-        <include>UserControls</include>
+        <include>Controls_Interface</include>
+        <include>Maintenance</include>
+        <include>Controls_GamePlay</include>
         <include>Collisions</include>
         <include>Debug</include>
-        <include>GameplayGenerator</include>
+        <include>Level_Generator</include>
+        <include>Enemy_CrocWaveGenerator</include>
     </events>
 </c2eventsheet>
