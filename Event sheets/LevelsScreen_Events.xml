@@ -14,7 +14,7 @@
                     <param id="1" name="Value">Keyboard.StringFromKeyCode(Keyboard.LastKeyCode)</param>
                 </action>
                 <action id="-2" name="Go to layout" sid="8169993589463551" type="System">
-                    <param id="0" name="Layout">protoLevel2</param>
+                    <param id="0" name="Layout">World1</param>
                 </action>
             </actions>
         </event-block>

@@ -7,11 +7,7 @@
             <conditions>
                 <condition id="-1" name="Every tick" sid="3698087708246873" type="System" />
             </conditions>
-            <actions>
-                <action id="0" name="Set text" sid="8533053151234908" type="DebugText">
-                    <param id="0" name="Text">&quot;LevelNumber: &quot; &amp; LevelNumber&#x0D;&#x0A;&amp; newline &amp;&#x0D;&#x0A;&quot;WaveNumber &quot;  &amp; WaveNumber &amp; &quot;      &quot;  &amp; &quot;WaveIndexY: &quot; &amp;WaveIndexY&#x0D;&#x0A;&amp; newline &amp;&#x0D;&#x0A;&quot;SpawnSide &quot; &amp;SpawnSide &amp; &quot;       &quot; &amp; &quot;EnemiesPerSet: &quot; &amp; EnemiesPerSet &#x0D;&#x0A;&amp; newline &amp;&#x0D;&#x0A;&quot;Croc Cnt: &quot; &amp;crocodile.Count</param>
-                </action>
-            </actions>
+            <actions />
         </event-block>
     </events>
 </c2eventsheet>

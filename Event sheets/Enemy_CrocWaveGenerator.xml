@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Enemy_CrocWaveGenerator</name>
     <events>
-        <event-group description="algorithm to spawn enemy waves" sid="6740860359705543" title="Croc Spawn Waves Algorithm">
+        <event-group collapsed="1" description="algorithm to spawn enemy waves" sid="6740860359705543" title="Croc Spawn Waves Algorithm">
             <sub-events>
                 <comment>Random changing spawn sides</comment>
                 <event-block sid="3170226008444687">
@@ -326,5 +326,52 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="376929620038599" title="Croc Animation" />
+        <event-block sid="9612554137259665">
+            <conditions>
+                <condition id="2" inverted="1" name="Is pause" sid="4945510499360543" type="Pause" />
+                <condition id="-3" name="Is on-screen" sid="2273048880214669" type="enemy_croc" />
+            </conditions>
+            <actions>
+                <action id="-23" name="Move at angle" sid="2973705188341381" type="enemy_croc">
+                    <param id="0" name="Angle">0</param>
+                    <param id="1" name="Distance">5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4135754096128638">
+            <conditions>
+                <condition id="666" name="On initialised" sid="5395480918561086" type="enemy_croc" />
+            </conditions>
+            <actions>
+                <action id="666" name="Associate object type" sid="6954561102989431" type="enemy_croc">
+                    <param id="0" name="Object">enemy_croc_body0</param>
+                    <param id="1" name="Name">&quot;body0&quot;</param>
+                </action>
+                <action id="666" name="Associate object type" sid="6425997535626086" type="enemy_croc">
+                    <param id="0" name="Object">enemy_croc_head1</param>
+                    <param id="1" name="Name">&quot;head1&quot;</param>
+                </action>
+                <action id="666" name="Associate object type" sid="968173882715945" type="enemy_croc">
+                    <param id="0" name="Object">enemy_croc_tail0</param>
+                    <param id="1" name="Name">&quot;tail0&quot;</param>
+                </action>
+                <action id="666" name="Associate object type" sid="5251998074980599" type="enemy_croc">
+                    <param id="0" name="Object">enemy_croc_hind_rt_leg0</param>
+                    <param id="1" name="Name">&quot;hind_rt_leg0&quot;</param>
+                </action>
+                <action id="666" name="Associate object type" sid="4789711233284947" type="enemy_croc">
+                    <param id="0" name="Object">enemy_croc_front_rt_leg0</param>
+                    <param id="1" name="Name">&quot;front_rt_leg0&quot;</param>
+                </action>
+                <action id="666" name="Associate object type" sid="9613673764890561" type="enemy_croc">
+                    <param id="0" name="Object">enemy_croc_front_lt_leg0</param>
+                    <param id="1" name="Name">&quot;front_lt_leg0&quot;</param>
+                </action>
+                <action id="1" name="Set playback speed ratio" sid="6468013132244229" type="enemy_croc">
+                    <param id="0" name="Speed Ratio">0.3</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

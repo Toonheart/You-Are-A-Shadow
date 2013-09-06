@@ -17,6 +17,7 @@
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Rex.Rainbow" id="Rex_Pause" version="1">Pause</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="BrashMonkey" id="Spriter" version="1">Scml</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
@@ -50,6 +51,210 @@
         <prop name="Use iOS retina display">iPhone only</prop>
     </configuration-settings>
     <object-folder expanded="1">
+        <object-folder expanded="1" name="enemy_croc sprites">
+            <object-type name="enemy_croc_body0" sid="710934549132481">
+                <plugin id="Sprite" />
+                <container>
+                    <type>enemy_croc</type>
+                    <type>enemy_croc_body0</type>
+                    <type>enemy_croc_head1</type>
+                    <type>enemy_croc_tail0</type>
+                    <type>enemy_croc_hind_rt_leg0</type>
+                    <type>enemy_croc_front_rt_leg0</type>
+                    <type>enemy_croc_front_lt_leg0</type>
+                </container>
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3701279415421379" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.308511" y="0.308511" />
+                                <point x="0.5" y="0.265957" />
+                                <point x="0.680851" y="0.319149" />
+                                <point x="0.792553" y="0.5" />
+                                <point x="0.707447" y="0.707447" />
+                                <point x="0.5" y="0.707447" />
+                                <point x="0.329787" y="0.670213" />
+                                <point x="0.159574" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="enemy_croc_head1" sid="8211250523138888">
+                <plugin id="Sprite" />
+                <container>
+                    <type>enemy_croc</type>
+                    <type>enemy_croc_body0</type>
+                    <type>enemy_croc_head1</type>
+                    <type>enemy_croc_tail0</type>
+                    <type>enemy_croc_hind_rt_leg0</type>
+                    <type>enemy_croc_front_rt_leg0</type>
+                    <type>enemy_croc_front_lt_leg0</type>
+                </container>
+                <animation-folder expanded="1">
+                    <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9702801702651328" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.31383" y="0.31383" />
+                                <point x="0.5" y="0.340426" />
+                                <point x="0.659574" y="0.340426" />
+                                <point x="0.81383" y="0.5" />
+                                <point x="0.5" y="0.654255" />
+                                <point x="0.319149" y="0.680851" />
+                                <point x="0.260638" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.308511" y="0.308511" />
+                                <point x="0.5" y="0.335106" />
+                                <point x="0.670213" y="0.329787" />
+                                <point x="0.787234" y="0.5" />
+                                <point x="0.62234" y="0.62234" />
+                                <point x="0.5" y="0.670213" />
+                                <point x="0.308511" y="0.691489" />
+                                <point x="0.319149" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.31383" y="0.31383" />
+                                <point x="0.5" y="0.31383" />
+                                <point x="0.765957" y="0.234043" />
+                                <point x="0.62766" y="0.5" />
+                                <point x="0.734043" y="0.734043" />
+                                <point x="0.5" y="0.707447" />
+                                <point x="0.329787" y="0.670213" />
+                                <point x="0.212766" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="enemy_croc_tail0" sid="7875617775762548">
+                <plugin id="Sprite" />
+                <container>
+                    <type>enemy_croc</type>
+                    <type>enemy_croc_body0</type>
+                    <type>enemy_croc_head1</type>
+                    <type>enemy_croc_tail0</type>
+                    <type>enemy_croc_hind_rt_leg0</type>
+                    <type>enemy_croc_front_rt_leg0</type>
+                    <type>enemy_croc_front_lt_leg0</type>
+                </container>
+                <animation-folder expanded="1">
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3195527290663967" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.28125" y="0.28125" />
+                                <point x="0.5" y="0.34375" />
+                                <point x="0.645833" y="0.354167" />
+                                <point x="0.708333" y="0.5" />
+                                <point x="0.666667" y="0.666667" />
+                                <point x="0.5" y="0.666667" />
+                                <point x="0.416667" y="0.583333" />
+                                <point x="0.34375" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.385417" y="0.385417" />
+                                <point x="0.5" y="0.34375" />
+                                <point x="0.625" y="0.375" />
+                                <point x="0.666667" y="0.5" />
+                                <point x="0.645833" y="0.645833" />
+                                <point x="0.5" y="0.666667" />
+                                <point x="0.354167" y="0.645833" />
+                                <point x="0.1875" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="enemy_croc_hind_rt_leg0" sid="9369640121797435">
+                <plugin id="Sprite" />
+                <container>
+                    <type>enemy_croc</type>
+                    <type>enemy_croc_body0</type>
+                    <type>enemy_croc_head1</type>
+                    <type>enemy_croc_tail0</type>
+                    <type>enemy_croc_hind_rt_leg0</type>
+                    <type>enemy_croc_front_rt_leg0</type>
+                    <type>enemy_croc_front_lt_leg0</type>
+                </container>
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6999438756274449" speed="0">
+                        <frame duration="1" hotspotX="0.506667" hotspotY="0.506667">
+                            <collision-poly>
+                                <point x="0.293333" y="0.293333" />
+                                <point x="0.493333" y="0.266667" />
+                                <point x="0.626667" y="0.373333" />
+                                <point x="0.706667" y="0.493333" />
+                                <point x="0.64" y="0.64" />
+                                <point x="0.493333" y="0.706667" />
+                                <point x="0.36" y="0.64" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="enemy_croc_front_rt_leg0" sid="1824448692263209">
+                <plugin id="Sprite" />
+                <container>
+                    <type>enemy_croc</type>
+                    <type>enemy_croc_body0</type>
+                    <type>enemy_croc_head1</type>
+                    <type>enemy_croc_tail0</type>
+                    <type>enemy_croc_hind_rt_leg0</type>
+                    <type>enemy_croc_front_rt_leg0</type>
+                    <type>enemy_croc_front_lt_leg0</type>
+                </container>
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="914419114859929" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.3125" y="0.3125" />
+                                <point x="0.5" y="0.28125" />
+                                <point x="0.515625" y="0.484375" />
+                                <point x="0.65625" y="0.5" />
+                                <point x="0.65625" y="0.65625" />
+                                <point x="0.5" y="0.671875" />
+                                <point x="0.421875" y="0.578125" />
+                                <point x="0.34375" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="enemy_croc_front_lt_leg0" sid="931891436830445">
+                <plugin id="Sprite" />
+                <container>
+                    <type>enemy_croc</type>
+                    <type>enemy_croc_body0</type>
+                    <type>enemy_croc_head1</type>
+                    <type>enemy_croc_tail0</type>
+                    <type>enemy_croc_hind_rt_leg0</type>
+                    <type>enemy_croc_front_rt_leg0</type>
+                    <type>enemy_croc_front_lt_leg0</type>
+                </container>
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3177732096064832" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.4375" y="0.4375" />
+                                <point x="0.5" y="0.453125" />
+                                <point x="0.53125" y="0.46875" />
+                                <point x="0.609375" y="0.5" />
+                                <point x="0.578125" y="0.578125" />
+                                <point x="0.5" y="0.609375" />
+                                <point x="0.4375" y="0.5625" />
+                                <point x="0.390625" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
         <object-type name="TiledBackground" sid="2">
             <plugin id="TiledBg" />
             <texture />
@@ -59,16 +264,10 @@
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <image-point name="leftChoice" x="0.264569" y="0.0944056" />
-                        <image-point name="rightChoice" x="0.761072" y="0.475524" />
-                        <image-point name="leftChoice" x="0.285548" y="0.440559" />
-                        <image-point name="rightChoice" x="0.495338" y="0.101399" />
-                        <collision-poly>
-                            <point x="0.0034965" y="0.00524476" />
-                            <point x="0.997669" y="0.0034965" />
-                            <point x="0.997669" y="0.996503" />
-                            <point x="0.0034965" y="0.994755" />
-                        </collision-poly>
+                        <image-point name="leftChoice" x="0.264844" y="0.095" />
+                        <image-point name="rightChoice" x="0.760938" y="0.475" />
+                        <image-point name="leftChoice" x="0.285937" y="0.44" />
+                        <image-point name="rightChoice" x="0.495313" y="0.10125" />
                     </frame>
                 </animation>
             </animation-folder>
@@ -647,11 +846,80 @@
         <object-type name="Pause" sid="973717500161353">
             <plugin id="Rex_Pause" />
         </object-type>
+        <object-type name="World1Boulder1" sid="5821917802553016">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1388620417656058" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.755435" y="0.0446429" />
+                            <point x="0.95924" y="0.401786" />
+                            <point x="0.934783" y="0.866071" />
+                            <point x="0.0815217" y="0.857143" />
+                            <point x="0.0271739" y="0.357143" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="World1Boulder2" sid="5187986095273651">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4146641970684216" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.265625" y="0.233333" />
+                            <point x="0.609375" y="0" />
+                            <point x="0.972656" y="0.9" />
+                            <point x="0.464844" y="0.970833" />
+                            <point x="0.0273438" y="0.783333" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="World1Tree1" sid="2111026656375973">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1508199474553622" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.58547" y="0.8225" />
+                            <point x="0.136752" y="0.785" />
+                            <point x="0.517094" y="0.28" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="enemy_croc" sid="8658136309469283">
+            <plugin id="Spriter" />
+            <container>
+                <type>enemy_croc</type>
+                <type>enemy_croc_body0</type>
+                <type>enemy_croc_head1</type>
+                <type>enemy_croc_tail0</type>
+                <type>enemy_croc_hind_rt_leg0</type>
+                <type>enemy_croc_front_rt_leg0</type>
+                <type>enemy_croc_front_lt_leg0</type>
+            </container>
+        </object-type>
     </object-folder>
-    <families />
+    <families>
+        <family name="enemy_crocFamily" plugin-id="Sprite" sid="4518589100259817">
+            <members>
+                <member>enemy_croc_body0</member>
+                <member>enemy_croc_front_lt_leg0</member>
+                <member>enemy_croc_front_rt_leg0</member>
+                <member>enemy_croc_head1</member>
+                <member>enemy_croc_hind_rt_leg0</member>
+                <member>enemy_croc_tail0</member>
+            </members>
+        </family>
+    </families>
     <layout-folder expanded="1">
         <layout>protoTitle.xml</layout>
-        <layout>protoLevel2.xml</layout>
+        <layout>World1.xml</layout>
         <layout>GraphicStore.xml</layout>
         <layout>LevelsScreen.xml</layout>
     </layout-folder>
@@ -662,8 +930,8 @@
         <event-sheet>protoCollisions.xml</event-sheet>
         <event-sheet>Fades.xml</event-sheet>
         <event-sheet>protoTitleEvents.xml</event-sheet>
-        <event-sheet>protoLevel2_Events.xml</event-sheet>
-        <event-sheet>Level_Generator.xml</event-sheet>
+        <event-sheet>World1_Events.xml</event-sheet>
+        <event-sheet>World_Level_Generator.xml</event-sheet>
         <event-sheet>Debug.xml</event-sheet>
         <event-sheet>Collisions.xml</event-sheet>
         <event-sheet>Controls_GamePlay.xml</event-sheet>
@@ -724,6 +992,9 @@
         <file name="GameLogomusic.wav" />
     </music-folder>
     <files-folder expanded="1">
+        <file-folder expanded="1" name="Spriter animations">
+            <file name="enemy_croc.scml" />
+        </file-folder>
         <file name="phatone-regular-webfont.eot" />
         <file name="phatone-regular-webfont.svg" />
         <file name="phatone-regular-webfont.ttf" />
