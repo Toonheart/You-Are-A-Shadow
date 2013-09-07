@@ -213,10 +213,10 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="How each type of enemies move" sid="677269178247023" title="Croc Movement Pattern">
+        <event-group collapsed="1" description="How each type of enemies move" disabled="1" sid="677269178247023" title="Croc Movement Pattern">
             <sub-events>
                 <comment>If Croc is designated to move left or right then make them move that way</comment>
-                <event-block sid="1103601538450148">
+                <event-block disabled="1" sid="1103601538450148">
                     <conditions>
                         <condition id="-7" name="Compare instance variable" sid="75242541592582" type="crocodile">
                             <param id="0" name="Instance variable">MoveDirection</param>
@@ -230,7 +230,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="4423039834506644">
+                <event-block disabled="1" sid="4423039834506644">
                     <conditions>
                         <condition id="-7" name="Compare instance variable" sid="8792307481645226" type="crocodile">
                             <param id="0" name="Instance variable">MoveDirection</param>
@@ -245,7 +245,7 @@
                     </actions>
                 </event-block>
                 <comment>If the opposite crocs reach opposite direction then destroy</comment>
-                <event-block sid="3247209059337339">
+                <event-block disabled="1" sid="3247209059337339">
                     <conditions>
                         <condition id="-1" name="Compare X" sid="9653472194572884" type="crocodile">
                             <param id="0" name="Comparison">2</param>
@@ -261,7 +261,7 @@
                         <action id="-9" name="Destroy" sid="9093162049140926" type="crocodile" />
                     </actions>
                 </event-block>
-                <event-block sid="9888483612779714">
+                <event-block disabled="1" sid="9888483612779714">
                     <conditions>
                         <condition id="-1" name="Compare X" sid="2019697239916914" type="crocodile">
                             <param id="0" name="Comparison">4</param>
@@ -278,13 +278,13 @@
                     </actions>
                 </event-block>
                 <comment>Based on the place of creation, designate a left or right movement</comment>
-                <event-block sid="5972618999623684">
+                <event-block disabled="1" sid="5972618999623684">
                     <conditions>
                         <condition id="-18" name="On created" sid="5928717645533573" type="crocodile" />
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="6042044565188743">
+                        <event-block disabled="1" sid="6042044565188743">
                             <conditions>
                                 <condition id="-1" name="Compare X" sid="7851465545798673" type="crocodile">
                                     <param id="0" name="Comparison">2</param>
@@ -303,7 +303,7 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="6131519874621069">
+                        <event-block disabled="1" sid="6131519874621069">
                             <conditions>
                                 <condition id="-1" name="Compare X" sid="5313833095602716" type="crocodile">
                                     <param id="0" name="Comparison">4</param>
@@ -329,47 +329,57 @@
         <event-group description="" sid="376929620038599" title="Croc Animation" />
         <event-block sid="9612554137259665">
             <conditions>
-                <condition id="2" inverted="1" name="Is pause" sid="4945510499360543" type="Pause" />
                 <condition id="-3" name="Is on-screen" sid="2273048880214669" type="enemy_croc" />
+                <condition id="2" inverted="1" name="Is pause" sid="4945510499360543" type="Pause" />
             </conditions>
             <actions>
-                <action id="-23" name="Move at angle" sid="2973705188341381" type="enemy_croc">
-                    <param id="0" name="Angle">0</param>
-                    <param id="1" name="Distance">5</param>
-                </action>
+                <action behavior="8Direction" id="0" name="Stop" sid="6015021723619353" type="enemy_croc" />
             </actions>
         </event-block>
-        <event-block sid="4135754096128638">
+        <event-block sid="4003308261673832">
             <conditions>
-                <condition id="666" name="On initialised" sid="5395480918561086" type="enemy_croc" />
+                <condition id="666" name="On initialised" sid="465310489542059" type="enemy_croc" />
             </conditions>
             <actions>
-                <action id="666" name="Associate object type" sid="6954561102989431" type="enemy_croc">
-                    <param id="0" name="Object">enemy_croc_body0</param>
-                    <param id="1" name="Name">&quot;body0&quot;</param>
-                </action>
-                <action id="666" name="Associate object type" sid="6425997535626086" type="enemy_croc">
-                    <param id="0" name="Object">enemy_croc_head1</param>
-                    <param id="1" name="Name">&quot;head1&quot;</param>
-                </action>
-                <action id="666" name="Associate object type" sid="968173882715945" type="enemy_croc">
-                    <param id="0" name="Object">enemy_croc_tail0</param>
-                    <param id="1" name="Name">&quot;tail0&quot;</param>
-                </action>
-                <action id="666" name="Associate object type" sid="5251998074980599" type="enemy_croc">
-                    <param id="0" name="Object">enemy_croc_hind_rt_leg0</param>
-                    <param id="1" name="Name">&quot;hind_rt_leg0&quot;</param>
-                </action>
-                <action id="666" name="Associate object type" sid="4789711233284947" type="enemy_croc">
-                    <param id="0" name="Object">enemy_croc_front_rt_leg0</param>
-                    <param id="1" name="Name">&quot;front_rt_leg0&quot;</param>
-                </action>
-                <action id="666" name="Associate object type" sid="9613673764890561" type="enemy_croc">
+                <action id="666" name="Associate object type" sid="4216326736826877" type="enemy_croc">
                     <param id="0" name="Object">enemy_croc_front_lt_leg0</param>
                     <param id="1" name="Name">&quot;front_lt_leg0&quot;</param>
                 </action>
+                <action id="666" name="Associate object type" sid="2123023223223955" type="enemy_croc">
+                    <param id="0" name="Object">enemy_croc_body0</param>
+                    <param id="1" name="Name">&quot;body0&quot;</param>
+                </action>
+                <action id="666" name="Associate object type" sid="6156499238413667" type="enemy_croc">
+                    <param id="0" name="Object">enemy_croc_head1</param>
+                    <param id="1" name="Name">&quot;head1&quot;</param>
+                </action>
+                <action id="666" name="Associate object type" sid="5892463130008646" type="enemy_croc">
+                    <param id="0" name="Object">enemy_croc_tail0</param>
+                    <param id="1" name="Name">&quot;tail0&quot;</param>
+                </action>
+                <action id="666" name="Associate object type" sid="5939014938495602" type="enemy_croc">
+                    <param id="0" name="Object">enemy_croc_hind_rt_leg0</param>
+                    <param id="1" name="Name">&quot;hind_rt_leg0&quot;</param>
+                </action>
+                <action id="666" name="Associate object type" sid="5493589408857373" type="enemy_croc">
+                    <param id="0" name="Object">enemy_croc_front_rt_leg0</param>
+                    <param id="1" name="Name">&quot;front_rt_leg0&quot;</param>
+                </action>
                 <action id="1" name="Set playback speed ratio" sid="6468013132244229" type="enemy_croc">
-                    <param id="0" name="Speed Ratio">0.3</param>
+                    <param id="0" name="Speed Ratio">0.1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7030036625141715">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2538198886438954" type="blackkitten">
+                    <param id="0" name="Object">enemy_crocFamily</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Set Entity" sid="1176939454657142" type="enemy_croc">
+                    <param id="0" name="Entity">&quot;entity_000&quot;</param>
+                    <param id="1" name="Animation">&quot;attack&quot;</param>
                 </action>
             </actions>
         </event-block>

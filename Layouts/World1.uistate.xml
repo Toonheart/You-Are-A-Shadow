@@ -6,7 +6,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
         <position-x>640</position-x>
         <position-y>400</position-y>
-        <position-z>370.979</position-z>
+        <position-z>253.384</position-z>
         <lookat-x>640</lookat-x>
         <lookat-y>400</lookat-y>
         <lookat-z>0</lookat-z>
@@ -15,6 +15,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <show-grid>0</show-grid>
     <snap-width>150</snap-width>
     <snap-height>173</snap-height>
+    <show-collision-polys>0</show-collision-polys>
     <properties>
         <property expanded="1" name="Layout properties" />
         <property expanded="0" name="Layout Size" />

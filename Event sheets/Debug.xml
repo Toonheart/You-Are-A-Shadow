@@ -7,7 +7,14 @@
             <conditions>
                 <condition id="-1" name="Every tick" sid="3698087708246873" type="System" />
             </conditions>
-            <actions />
+            <actions>
+                <action id="0" name="Set text" sid="7605501241127364" type="DebugText">
+                    <param id="0" name="Text">&quot;FPS: &quot; &amp; fps &amp; &quot;(&quot; &amp; renderer  &amp; &quot;)&quot;&#x0D;&#x0A;&amp; newline &amp;&#x0D;&#x0A;&quot;LevelNumber: &quot; &amp; LevelNumber&#x0D;&#x0A;&amp; newline &amp;&#x0D;&#x0A;&quot;WaveNumber &quot;  &amp; WaveNumber &amp; &quot;      &quot;  &amp; &quot;WaveIndexY: &quot; &amp;WaveIndexY&#x0D;&#x0A;&amp; newline &amp;&#x0D;&#x0A;&quot;SpawnSide &quot; &amp;SpawnSide &amp; &quot;       &quot; &amp; &quot;EnemiesPerSet: &quot; &amp; EnemiesPerSet &#x0D;&#x0A;&amp; newline &amp;&#x0D;&#x0A;&quot;Croc Cnt: &quot; &amp;crocodile.Count</param>
+                </action>
+                <action id="1" name="Append text" sid="5801741583428704" type="DebugText">
+                    <param id="0" name="Text"> newline &amp;&#x0D;&#x0A;&quot;Croc Angle: &quot; &amp; enemy_croc.Angle</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>
